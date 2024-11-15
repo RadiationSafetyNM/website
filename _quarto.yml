@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "RadiationSafetyNM"
+  navbar:
+    logo: KSNM_logo.png
+    left:
+      - text: Blog
+        href: index.qmd
+      - text: Justification
+        href: posts/justification/index.qmd
+      - text: Optimization
+        href: posts/optimization/index.qmd
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    comments:
+      utterances:
+        repo: RadiationSafetyNM/website
+
+editor: visual
+

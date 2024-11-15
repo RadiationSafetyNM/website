@@ -1,0 +1,13 @@
+---
+title: "Optimization"
+author: "Radation Safety Committee in the Korean Society of Nuclear Medicine"
+date: "2024-11-13"
+categories: [introduction]
+image: "image.jpg"
+---
+
+This is a post with executable code.
+
+```{r}
+1 + 1
+```
