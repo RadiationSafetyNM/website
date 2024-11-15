@@ -1,8 +1,8 @@
 {
-  "hash": "c875850afedc9c3d30cefa64642c11ad",
+  "hash": "90c509b3a969e9b36aa975606b5f67d2",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Optimization\"\nauthor: \"Radation Safety Committee in the Korean Society of Nuclear Medicine\"\ndate: \"2024-11-13\"\ncategories: [introduction]\nimage: \"image.jpg\"\n---\n\n\n\n\nThis is a post with executable code.\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n",
+    "markdown": "---\ntitle: \"최적화\"\nauthor: \"대한핵의학회 방사선안전위원회\"\ndate: \"2024-11-18\"\ncategories: [justification]\nimage: \"image.jpg\"\n---\n\n\n\n\nThis is a post with executable code.\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

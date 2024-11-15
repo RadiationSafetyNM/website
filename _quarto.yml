@@ -3,15 +3,15 @@ project:
   output-dir: docs
 
 website:
-  title: "RadiationSafetyNM"
+  title: "헥의학 방사선안전관리"
   navbar:
     logo: KSNM_logo.png
     left:
-      - text: Blog
+      - text: 블로그
         href: index.qmd
-      - text: Justification
+      - text: 정당화
         href: posts/justification/index.qmd
-      - text: Optimization
+      - text: 최적화
         href: posts/optimization/index.qmd
     right:
       - about.qmd

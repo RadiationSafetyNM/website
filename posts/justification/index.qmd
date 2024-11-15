@@ -1,7 +1,7 @@
 ---
-title: "Justification"
-author: "Radation Safety Committee in KSNM"
-date: "2024-11-13"
+title: "정당화"
+author: "대한핵의학회 방사선안전위원회"
+date: "2024-11-18"
 categories: [introduction]
 ---
 

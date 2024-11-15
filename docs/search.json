@@ -2,16 +2,16 @@
   {
     "objectID": "posts/optimization/index.html",
     "href": "posts/optimization/index.html",
-    "title": "Optimization",
+    "title": "최적화",
     "section": "",
     "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Blog",
+    "title": "블로그",
     "section": "",
-    "text": "Justification\n\n\n\n\n\n\nintroduction\n\n\n\n\n\n\n\n\n\nNov 13, 2024\n\n\nRadation Safety Committee in KSNM\n\n\n\n\n\n\n\n\n\n\n\n\nOptimization\n\n\n\n\n\n\nintroduction\n\n\n\n\n\n\n\n\n\nNov 13, 2024\n\n\nRadation Safety Committee in the Korean Society of Nuclear Medicine\n\n\n\n\n\n\nNo matching items"
+    "text": "정당화\n\n\n\n\n\n\nintroduction\n\n\n\n\n\n\n\n\n\nNov 18, 2024\n\n\n대한핵의학회 방사선안전위원회\n\n\n\n\n\n\n\n\n\n\n\n\n최적화\n\n\n\n\n\n\njustification\n\n\n\n\n\n\n\n\n\nNov 18, 2024\n\n\n대한핵의학회 방사선안전위원회\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -23,7 +23,7 @@
   {
     "objectID": "posts/justification/index.html",
     "href": "posts/justification/index.html",
-    "title": "Justification",
+    "title": "정당화",
     "section": "",
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   }
