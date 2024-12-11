@@ -1,0 +1,35 @@
+/* css styles */
+.tooltip {
+  position: relative;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  bottom: 125%;
+  transform: translateX(-50%);
+  background-color: #555;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  white-space: pre-wrap;
+  width: auto;
+  max-width: 300px; /* 최대 너비 설정 */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  text-align: left;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+  overflow-wrap: break-word; /* 단어가 너무 길 때 줄바꿈 허용 */
+}
+
+.tooltip:hover::after {
+  visibility: visible;
+  opacity: 1;
+}

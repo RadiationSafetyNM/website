@@ -1,0 +1,113 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "방사선안전관리"
+  
+  navbar:
+    logo: KSNM_logo.png
+    left:
+      - text: 블로그
+        href: index.qmd
+      - text: "정기점검 지적사항"
+        href: posts/comments/index.qmd
+      - text: "규제개선 제안사항"
+        href: posts/regulation/index.qmd
+      - text: "방사선안전 잇슈"
+        href: posts/issue/index.qmd
+      - text: "방사선안전관리 총람"
+        href: posts/compendium/index.qmd           
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/
+    search: true
+    
+  sidebar:
+    - title: "정기점검 지적사항"
+      collapse-level: 1
+      contents:
+        - posts/comments/index.qmd
+        - section: "자체처분"
+          contents:
+          - posts/comments/disposal/disposal.qmd
+        - section: "시설검사"
+          contents:
+          - posts/comments/facilities/facilities.qmd
+        - section: "변경신고"
+          contents:
+          - posts/comments/change_notification/change_notification.qmd
+        - section: "교육"
+          contents:
+          - posts/comments/education/licensee_education.qmd 
+          - posts/comments/education/worker_education.qmd             
+        - section: "인력기준"
+          contents:
+          - posts/comments/licenses_criteria/licenses_criteria.qmd
+        - section: "피폭관리"
+          contents:
+          - posts/comments/damage_management/damage_management.qmd 
+        - section: "변경허가"
+          contents:
+          - posts/comments/change_approval/change_approval.qmd   
+        - section: "기술기준"
+          contents:
+          - posts/comments/technical_criteria/technical_criteria.qmd
+        - section: "오염측정"
+          contents:
+          - posts/comments/measurement/measurement.qmd     
+        - section: "안전관리규정"
+          contents:
+          - posts/comments/management_requirement/management_requirement.qmd               
+        - section: "기록비치"
+          contents:
+          - posts/comments/recording/recording.qmd 
+        - section: "건강진단"
+          contents:
+          - posts/comments/health_examination/health_examination.qmd
+        - section: "보고"
+          contents:
+          - posts/comments/reporting/reporting.qmd
+    - title: "규제개선 제안사항"
+      collapse-level: 1
+      contents:
+        - posts/regulation/index.qmd
+        - section: "RI운송"
+          contents:
+          - posts/regulation/transport/transport_inside.qmd
+        - section: "보고"
+          contents:
+          - posts/regulation/reporting/reporting_duplicated.qmd   
+    - title: "방사선안전 잇슈"
+      collapse-level: 1
+      contents:
+        - posts/issue/index.qmd
+        - section: "영상검사 적정성평가"
+          contents:
+          - posts/issue/approriate/approriate.qmd
+    - title: "방사선안전관리 총람"
+      collapse-level: 1
+      contents:
+        - posts/compendium/index.qmd
+        - section: "방사선안전관리자"
+          contents:
+          - posts/compendium/manager/law.qmd
+          - posts/compendium/manager/technical_criteria.qmd          
+          - posts/compendium/manager/duties.qmd   
+
+format:
+  html:
+    theme: cosmo
+    css: styles/styles.css
+    csl: styles/nuclear-medicine-and-molecular-imaging.csl
+    toc: true
+    toc-depth: 4
+    comments:
+      utterances:
+        repo: RadiationSafetyNM/website
+
+editor: visual
+
+# resource-paths:
+  # - resources/
