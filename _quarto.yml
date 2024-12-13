@@ -90,9 +90,13 @@ website:
       collapse-level: 1
       contents:
         - posts/compendium/index.qmd
+        - section: "법령·규칙·고시"
+          contents:
+          - posts/compendium/law/nuclear_safety_act.qmd    
+          - posts/compendium/law/technical_criteria.qmd    
+          - posts/compendium/law/medical_use_criteria.qmd            
         - section: "방사선안전관리자"
           contents:
-          - posts/compendium/manager/law.qmd
           - posts/compendium/manager/technical_criteria.qmd          
           - posts/compendium/manager/duties.qmd   
 
