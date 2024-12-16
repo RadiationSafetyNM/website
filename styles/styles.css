@@ -1,9 +1,0 @@
-.outdent {
-  text-indent: -20px; /* 첫 줄을 20px만큼 내어쓰기 */
-  margin-left: 20px;  /* 전체 문단을 오른쪽으로 이동 */
-}
-
-.outdent_2 {
-  text-indent: -20px; /* 첫 줄을 20px만큼 내어쓰기 */
-  margin-left: 20px;  /* 전체 문단을 오른쪽으로 이동 */
-}
