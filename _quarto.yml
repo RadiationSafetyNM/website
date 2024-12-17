@@ -96,7 +96,7 @@ website:
           - posts/compendium/law/enforcement_decree_nuclear_safety_act.qmd              
           - posts/compendium/law/technical_criteria.qmd    
           - posts/compendium/law/medical_use_criteria.qmd
-          - posts/compendium/law/방사선방호등에관한기준.qmd
+          - posts/compendium/law/radiation_protection_criteria.qmd
         - section: "방사선안전관리자업무"
           contents:
           - posts/compendium/manager/technical_criteria.qmd          
