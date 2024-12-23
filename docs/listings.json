@@ -2,13 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/compendium/manager/technical_criteria.html",
-      "/posts/compendium/manager/duties.html",
-      "/posts/issue/approriate/approriate.html",
-      "/posts/issue/index.html",
-      "/posts/comments/index.html",
-      "/posts/compendium/index.html",
-      "/posts/regulation/index.html",
+      "/posts/about.html",
       "/posts/comments/change_approval/change_approval.html",
       "/posts/comments/change_notification/change_notification.html",
       "/posts/comments/damage_management/damage_management.html",
@@ -17,19 +11,26 @@
       "/posts/comments/education/worker_education.html",
       "/posts/comments/facilities/facilities.html",
       "/posts/comments/health_examination/health_examination.html",
+      "/posts/comments/index.html",
       "/posts/comments/licenses_criteria/licenses_criteria.html",
       "/posts/comments/management_requirement/management_requirement.html",
       "/posts/comments/measurement/measurement.html",
       "/posts/comments/recording/recording.html",
       "/posts/comments/reporting/reporting.html",
       "/posts/comments/technical_criteria/technical_criteria.html",
-      "/posts/regulation/reporting/reporting_duplicated.html",
-      "/posts/regulation/transport/transport_inside.html",
+      "/posts/compendium/index.html",
       "/posts/compendium/law/enforcement_decree_nuclear_safety_act.html",
-      "/posts/compendium/law/nuclear_safety_act.html",
-      "/posts/compendium/law/technical_criteria.html",
       "/posts/compendium/law/medical_use_criteria.html",
-      "/posts/compendium/law/radiation_protection_criteria.html"
+      "/posts/compendium/law/nuclear_safety_act.html",
+      "/posts/compendium/law/radiation_protection_criteria.html",
+      "/posts/compendium/law/technical_criteria.html",
+      "/posts/compendium/manager/duties.html",
+      "/posts/compendium/manager/technical_criteria.html",
+      "/posts/issue/approriate/approriate.html",
+      "/posts/issue/index.html",
+      "/posts/regulation/index.html",
+      "/posts/regulation/reporting/reporting_duplicated.html",
+      "/posts/regulation/transport/transport_inside.html"
     ]
   }
 ]

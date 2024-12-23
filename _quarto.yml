@@ -19,7 +19,7 @@ website:
       - text: "방사선안전관리 총람"
         href: posts/compendium/index.qmd           
     right:
-      - about.qmd
+      - posts/about.qmd
       - icon: github
         href: https://github.com/
     search: true
