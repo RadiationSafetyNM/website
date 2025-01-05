@@ -102,6 +102,9 @@ website:
         - section: "방사선안전관리자업무"
           contents:
           - posts/compendium/duty/duty.qmd   
+        - section: "방사선안전관리자 인력"
+          contents:
+          - posts/compendium/resource/resource.qmd             
 
 format:
   html:
