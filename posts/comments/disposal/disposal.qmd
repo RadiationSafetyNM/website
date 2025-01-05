@@ -1,7 +1,8 @@
 ---
 title: "자체처분 부적합"
-author: "Radiation Safety Committee"
+author: "대한핵의학회 방사선안전위원회"
 date: "2024-11-17"
+date-modified: "2024-11-17"
 categories: [정기점검 지적사항, 자체처분, 자체처분 부적합]
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: "규제개선 제안사항"
-author: "Radiation Safety Committee"
+author: "대한핵의학회 방사선안전위원회"
 date: "2024-11-18"
+date-modified: "2024-11-18"
 categories: [규제개선]
 ---
 

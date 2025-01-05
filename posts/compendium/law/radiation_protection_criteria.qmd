@@ -1,9 +1,11 @@
 ---
 title: "방사선방호 등에 관한 기준"
-author: "Radiation Safety Committee"
-description: "[시행 2019. 5. 10.] [원자력안전위원회고시 제2019-10호, 2019. 5. 10., 일부개정]"
+description:  |
+  [시행 2019. 5. 10.] [원자력안전위원회고시 제2019-10호, 2019. 5. 10., 일부개정]<br><br>
+  <div style="text-align: right;">
+  원자력안전위원회(방사선안전과), 02-397-7273</div>
 date: "2019-05-10"
-date-modified: "2024-12-07"
+date-modified: "2019-05-10"
 categories: [고시, 기준]
 ---
 

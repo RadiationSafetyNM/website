@@ -1,7 +1,8 @@
 ---
 title: "보고중복"
-author: "Radiation Safety Committee"
-date: "2024-11-17"
+author: "대한핵의학회 방사선안전위원회"
+date: "2022-05-04"
+date-modified: "2022-05-04"
 categories: [규제개선, 보고중복]
 ---
 
