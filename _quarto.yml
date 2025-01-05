@@ -93,10 +93,12 @@ website:
         - section: "법령·규칙·고시"
           contents:
           - posts/compendium/law/nuclear_safety_act.qmd    
-          - posts/compendium/law/enforcement_decree_nuclear_safety_act.qmd              
+          - posts/compendium/law/enforcement_decree_nuclear_safety_act.qmd        
+          - posts/compendium/law/nuclear_safety_enforcement_rule.qmd
           - posts/compendium/law/technical_criteria.qmd    
           - posts/compendium/law/medical_use_criteria.qmd
           - posts/compendium/law/radiation_protection_criteria.qmd
+          - posts/compendium/law/notice_establishing_safety_management_regulation.qmd          
         - section: "방사선안전관리자업무"
           contents:
           - posts/compendium/duty/duty.qmd   

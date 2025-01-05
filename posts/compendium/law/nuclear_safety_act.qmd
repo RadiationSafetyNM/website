@@ -1,6 +1,5 @@
 ---
 title: "원자력안전법"
-author: "Radiation Safety Committee"
 description: |
   「원자력안전법」[시행 2024. 11. 1.] [법률 제19826호, 2023. 10. 31., 일부개정]<br><br>
     <div style="text-align: right;">
