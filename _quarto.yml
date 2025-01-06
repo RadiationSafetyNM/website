@@ -100,7 +100,8 @@ website:
           - posts/compendium/law/technical_criteria.qmd    
           - posts/compendium/law/medical_use_criteria.qmd
           - posts/compendium/law/radiation_protection_criteria.qmd
-          - posts/compendium/law/notice_establishing_safety_management_regulation.qmd          
+          - posts/compendium/law/notice_establishing_safety_management_regulation.qmd   
+          - posts/compendium/law/dma_radiation_safety_management_regulation.qmd      
         - section: "방사선안전관리자업무"
           contents:
           - posts/compendium/duty/duty.qmd   
