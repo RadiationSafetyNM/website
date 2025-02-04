@@ -120,6 +120,8 @@ format:
     csl: styles/nuclear-medicine-and-molecular-imaging.csl
     toc: true
     toc-depth: 4
+    date-format: "YYYY.M.D"
+    date-modified-format: "YYYY.M.D"    
     include-after-body:
       - text: |
           <script src="/scripts/tooltip.js"></script>

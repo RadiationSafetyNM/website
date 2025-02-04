@@ -6,6 +6,15 @@
   cursor: pointer;
 }
 
+
+/* 특정 툴팁 트리거: 배경 검정, 글자 흰색 */
+.tooltip-text-inverted {
+  background-color: black;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 3px; /* 선택 사항: 모서리를 둥글게 */
+}
+
 /* Ensure tooltip width, wrapping, and left alignment */
 .tooltip-inner {
   white-space: pre-line; 
