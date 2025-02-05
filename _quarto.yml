@@ -14,7 +14,7 @@ website:
         href: posts/inspection/inspection.qmd   
       - text: "규제개선 제안사항"
         href: posts/regulation/index.qmd
-      - text: "방사선안전 잇슈"
+      - text: "방사선안전 이슈"
         href: posts/issue/index.qmd
       - text: "방사선안전관리 총람"
         href: posts/compendium/index.qmd   
@@ -86,7 +86,7 @@ website:
         - section: "보고"
           contents:
           - posts/regulation/reporting/reporting_duplicated.qmd   
-    - title: "방사선안전 잇슈"
+    - title: "방사선안전 이슈"
       collapse-level: 1
       contents:
         - posts/issue/index.qmd
