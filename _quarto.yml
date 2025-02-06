@@ -35,10 +35,21 @@ website:
           href: posts/comments/index.qmd
           contents:
           - section: "교육훈련"
+            href: posts/inspection/education_training/education_training.qmd
             contents:
             - posts/inspection/education_training/radiation_workers_inductory.qmd    
             - posts/inspection/education_training/radiation_workers_regular.qmd               
             - posts/inspection/education_training/licensees_continuing.qmd 
+          - section: "건강진단"
+            href: posts/inspection/health_examination/health_examination.qmd          
+            contents:
+            - posts/inspection/health_examination/health_examination_new_workers.qmd
+            - posts/inspection/health_examination/health_examination_workers.qmd            
+            - posts/inspection/health_examination/health_examination_retired.qmd            
+          - section: "선량ㆍ오염측정"
+            href: posts/inspection/dose_contamination_measurement/dose_contamination_measurement.qmd                    
+            contents:
+            - posts/inspection/dose_contamination_measurement/surface_contamination.qmd                 
           - section: "자체처분"
             contents:
             - posts/comments/disposal/disposal.qmd
@@ -61,18 +72,12 @@ website:
           - section: "기술기준"
             contents:
             - posts/comments/technical_criteria/technical_criteria.qmd
-          - section: "오염측정"
-            contents:
-            - posts/comments/measurement/measurement.qmd     
           - section: "안전관리규정"
             contents:
             - posts/comments/management_requirement/management_requirement.qmd               
           - section: "기록비치"
             contents:
             - posts/comments/recording/recording.qmd 
-          - section: "건강진단"
-            contents:
-            - posts/comments/health_examination/health_examination.qmd
           - section: "보고"
             contents:
             - posts/comments/reporting/reporting.qmd
