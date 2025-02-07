@@ -46,38 +46,49 @@ website:
             - posts/inspection/health_examination/health_examination_new_workers.qmd
             - posts/inspection/health_examination/health_examination_workers.qmd            
             - posts/inspection/health_examination/health_examination_retired.qmd            
+          - section: "기록비치"
+            href: posts/inspection/recording_keeping/recording_keeping.qmd          
+            contents:
+            - posts/inspection/recording_keeping/recording_keeping_noncompliance.qmd             
+          - section: "안전관리규정"
+            href: posts/inspection/safety_management_regulation/safety_management_regulation.qmd          
+            contents:
+            - posts/inspection/safety_management_regulation/safety_management_regulation_noncompliance.qmd             
           - section: "선량ㆍ오염측정"
             href: posts/inspection/dose_contamination_measurement/dose_contamination_measurement.qmd                    
             contents:
             - posts/inspection/dose_contamination_measurement/surface_contamination.qmd                 
-          - section: "자체처분"
-            contents:
-            - posts/comments/disposal/disposal.qmd
-          - section: "시설검사"
-            contents:
-            - posts/comments/facilities/facilities.qmd
-          - section: "변경신고"
-            contents:
-            - posts/comments/change_notification/change_notification.qmd
-           
-          - section: "인력기준"
-            contents:
-            - posts/comments/licenses_criteria/licenses_criteria.qmd
-          - section: "피폭관리"
-            contents:
-            - posts/comments/damage_management/damage_management.qmd 
-          - section: "변경허가"
-            contents:
-            - posts/comments/change_approval/change_approval.qmd   
           - section: "기술기준"
+            href: posts/inspection/technical_criteria/technical_criteria.qmd
             contents:
-            - posts/comments/technical_criteria/technical_criteria.qmd
-          - section: "안전관리규정"
+            - posts/inspection/technical_criteria/technical_criteria_contamination_measurement.qmd  
+            - posts/inspection/technical_criteria/technical_criteria_quality_management.qmd
+            - posts/inspection/technical_criteria/technical_criteria_warning.qmd   
+          - section: "변경허가"
+            href: posts/inspection/license_amendment/license_amendment.qmd
             contents:
-            - posts/comments/management_requirement/management_requirement.qmd               
-          - section: "기록비치"
+            - posts/inspection/license_amendment/license_amendment_limit_over.qmd   
+          - section: "자체처분"
+            href: posts/inspection/self_disposal/self_disposal.qmd          
             contents:
-            - posts/comments/recording/recording.qmd 
+            - posts/inspection/self_disposal/self_disposal_amount_mismatch.qmd  
+          - section: "시설검사"
+            href: posts/inspection/facility_inspection/facility_inspection.qmd
+            contents:
+            - posts/inspection/facility_inspection/facility_inspection_conducting.qmd
+          - section: "변경신고"
+            href: posts/inspection/alteration_reporting/alteration_reporting.qmd
+            contents:
+            - posts/inspection/alteration_reporting/alteration_reporting_conducting.qmd
+          - section: "장비ㆍ인력"
+            href: posts/inspection/equipment_human_resources/equipment_human_resources.qmd          
+            contents:
+            - posts/inspection/equipment_human_resources/equipment_human_resources_improper.qmd
+          - section: "피폭관리"
+            href: posts/inspection/exposure_control/exposure_control.qmd
+            contents:
+            - posts/inspection/exposure_control/exposure_control_improper.qmd 
+
           - section: "보고"
             contents:
             - posts/comments/reporting/reporting.qmd
@@ -111,7 +122,10 @@ website:
           - posts/compendium/law/medical_use_criteria.qmd
           - posts/compendium/law/radiation_protection_criteria.qmd
           - posts/compendium/law/notice_establishing_safety_management_regulation.qmd   
+          - posts/compendium/law/exposure_management_regulation.qmd
+          - posts/compendium/law/disposal_regulation.qmd           
           - posts/compendium/law/dma_radiation_safety_management_regulation.qmd      
+          
         - section: "방사선안전관리자업무"
           contents:
           - posts/compendium/duty/duty.qmd   
