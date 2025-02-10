@@ -1,0 +1,8 @@
+---
+title: "법령ㆍ규칙ㆍ고시"
+description: "방사선안전과 관련된 법령규칙고시들 입니다."
+author: "대한핵의학회 방사선안전위원회"
+date: "2024-11-06"
+date-modified: "2024-11-06"
+categories: [introduction]
+---
