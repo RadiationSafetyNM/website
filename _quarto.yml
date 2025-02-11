@@ -13,13 +13,15 @@ website:
       - text: "법령·규칙·고시"
         href: posts/law/law.qmd
       - text: "안전관리실무"
-        href: posts/practice/index.qmd           
-      - text: "규제개선·제안사항"
-        href: posts/regulation/index.qmd
+        href: posts/practice/practice.qmd           
+      - text: "규제개선제안"
+        href: posts/suggestion/index.qmd
       - text: "블로그"
-        href: index.qmd        
+        href: index.qmd   
+      - text: "ICRP출판물"
+        href: posts/ICRP/icrp.qmd           
       - text: "관련 사이트"
-        href: posts/Link.qmd           
+        href: posts/link.qmd           
     right:
       - icon: github
         href: https://github.com/
@@ -35,17 +37,27 @@ website:
         - posts/law/technical_criteria.qmd    
         - posts/law/medical_use_criteria.qmd
         - posts/law/radiation_protection_criteria.qmd
-        - posts/law/notice_establishing_safety_management_regulation.qmd   
+        - posts/law/notice_establishing_safety_management_regulation.qmd  
+        - posts/law/rsr_preperation_regulation.qmd     
         - posts/law/exposure_management_regulation.qmd
         - posts/law/disposal_regulation.qmd           
         - posts/law/dma_radiation_safety_management_regulation.qmd
+        
 
     - title: "안전관리실무"
       contents:
-        - posts/practice/index.qmd
-        - section: "방사선안전관리자업무"
+        - posts/practice/practice.qmd
+        - section: "안전관리자업무"
+          href: posts/practice/duty/duty.qmd
           contents:
-          - posts/practice/duty/duty.qmd
+          - posts/practice/duty/smr_revising.qmd
+          - posts/practice/duty/rsr_revising.qmd          
+          - posts/practice/duty/RI_purchase.qmd  
+          - posts/practice/duty/measurement_contamination_management.qmd 
+        - section: "안전관리자인력"
+          href: posts/practice/resource/resource.qmd
+          contents:
+          - posts/practice/resource/resource.qmd      
         - section: "정기검사 수검준비"
           href: posts/inspection/guidelines/guidelines.qmd
           contents:
@@ -112,25 +124,28 @@ website:
               contents:
               - posts/inspection/reporting/reporting_omission.qmd              
 
-    - title: "규제개선·제안사항"
+    - title: "규제개선제안"
       contents:
-        - posts/regulation/index.qmd
-        - section: "검토중인 사항"
-          href: posts/regulation/review/review.qmd
+        - posts/suggestion/index.qmd
+        - section: "운송"
+          href: posts/suggestion/transport/transport.qmd
           contents:
-            - posts/regulation/review/review1.qmd
-            - posts/regulation/review/review2.qmd  
-        - section: "제안된 사항"
-          href: posts/regulation/suggested/suggested.qmd
+            - posts/suggestion/transport/transport_inside.qmd
+        - section: "보고"
+          href: posts/suggestion/reporting/reporting.qmd
           contents:
-            - posts/regulation/suggested/transport_inside.qmd
-            - posts/regulation/suggested/reporting_duplicated.qmd   
-            - posts/regulation/suggested/approriate.qmd
+            - posts/suggestion/reporting/reporting_duplicated.qmd   
+        - section: "최적화"
+          href: posts/suggestion/optimization/optimization.qmd
+          contents:
+            - posts/suggestion/optimization/approriate.qmd
 
-
+    - title: "ICRP출판물"
+      contents:
+        - posts/ICRP/icrp.qmd  
     - title: "관련 사이트"
       contents:
-        - posts/Link.qmd    
+        - posts/link.qmd    
 
 format:
   html:
