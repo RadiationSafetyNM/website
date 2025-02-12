@@ -1,12 +1,12 @@
 ---
 title: "ICRP출판물"
 description: "ICRP Publication 링크를 제공합니다."
-author: "대한핵의학회 방사선안전위원회"
+author: "대한핵의학회<br>방사선안전위원회"
 date: "2025-02-10"
 date-modified: "2025-02-10"
 categories: [ICRP]
 ---
 
-
 ### Publication 135
+
 -   [Diagnostic Reference Levels in Medical Imaging](/archive/ICRP_Publication_135.pdf)

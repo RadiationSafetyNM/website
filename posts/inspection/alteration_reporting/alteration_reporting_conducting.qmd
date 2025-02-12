@@ -9,7 +9,7 @@ bibliography: references.bib
 
 한국원자력안전기술원에서 개최한 의료분야 안전관리 워크샵 (2017.10.24) 발표자료집에서 발췌 @igibog2017
 
--   <a href="../../compendium/law/nuclear_safety_act.qmd#제53조-방사성동위원소ㆍ방사선발생장치-사용-등의-허가-등" 
+-   <a href="../../law/nuclear_safety_act.qmd#제53조-방사성동위원소ㆍ방사선발생장치-사용-등의-허가-등" 
        target="_blank" 
        class="text-primary" 
        data-bs-toggle="tooltip" 
