@@ -13,7 +13,9 @@ website:
       - text: "법령·규칙·고시"
         href: posts/law/law.qmd
       - text: "안전관리실무"
-        href: posts/practice/practice.qmd           
+        href: posts/practice/practice.qmd  
+      - text: "영상품질·선량최적화"
+        href: posts/optimization/optimization.qmd          
       - text: "규제개선제안"
         href: posts/suggestion/index.qmd
       - text: "블로그"
@@ -31,18 +33,18 @@ website:
     - title: "법령·규칙·고시"
       contents:
         - posts/law/law.qmd
-        - posts/law/nuclear_safety_act.qmd    
-        - posts/law/enforcement_decree_nuclear_safety_act.qmd        
+        - posts/law/nuclear_safety_act.qmd
+        - posts/law/enforcement_decree_nuclear_safety_act.qmd
         - posts/law/nuclear_safety_enforcement_rule.qmd
-        - posts/law/technical_criteria.qmd    
+        - posts/law/technical_criteria.qmd
         - posts/law/medical_use_criteria.qmd
         - posts/law/radiation_protection_criteria.qmd
-        - posts/law/notice_establishing_safety_management_regulation.qmd  
-        - posts/law/rsr_preperation_regulation.qmd     
+        - posts/law/notice_establishing_safety_management_regulation.qmd
+        - posts/law/rsr_preperation_regulation.qmd
+        - posts/law/production_criteria.qmd        
         - posts/law/exposure_management_regulation.qmd
-        - posts/law/disposal_regulation.qmd           
+        - posts/law/disposal_regulation.qmd
         - posts/law/dma_radiation_safety_management_regulation.qmd
-        
 
     - title: "안전관리실무"
       contents:
@@ -51,7 +53,8 @@ website:
           href: posts/practice/duty/duty.qmd
           contents:
           - posts/practice/duty/smr_revising.qmd
-          - posts/practice/duty/rsr_revising.qmd          
+          - posts/practice/duty/rsr_revising.qmd
+          - posts/practice/duty/sar_revising.qmd          
           - posts/practice/duty/RI_purchase.qmd  
           - posts/practice/duty/measurement_contamination_management.qmd 
         - section: "안전관리자인력"
@@ -123,6 +126,10 @@ website:
               href: posts/inspection/reporting/reporting.qmd
               contents:
               - posts/inspection/reporting/reporting_omission.qmd              
+
+    - title: "영상품질·선량최적화"
+      contents:
+        - posts/optimization/optimization.qmd
 
     - title: "규제개선제안"
       contents:
