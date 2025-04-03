@@ -25,6 +25,8 @@ website:
       - text: "관련 사이트"
         href: posts/link.qmd           
     right:
+      - text: version 0.2.0 (2025-04-dd)
+        href: "#"    
       - icon: github
         href: https://github.com/
     search: true
