@@ -2,9 +2,10 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/practice/duty/smr_revising.html",
+      "/posts/practice/duty/duty.html",
       "/posts/manual.html",
       "/posts/inspection/guidelines/guidelines.html",
-      "/posts/practice/duty/duty.html",
       "/posts/law/radiation_protection_criteria.html",
       "/posts/law/enforcement_decree_nuclear_safety_act.html",
       "/posts/law/nuclear_safety_act.html",
@@ -14,7 +15,6 @@
       "/posts/practice/duty/RI_purchase.html",
       "/posts/ICRP/icrp.html",
       "/posts/practice/practice.html",
-      "/posts/practice/duty/smr_revising.html",
       "/posts/practice/duty/measurement_contamination_management.html",
       "/posts/practice/duty/radiation_safety_report.html",
       "/posts/practice/duty/rsr_revising.html",
