@@ -23,7 +23,7 @@ website:
       - text: "관련 사이트"
         href: posts/link.qmd           
     right:
-      - text: version 0.3.0 (2025-05-27)
+      - text: version 0.3.0 (2025-05-28)
         href: "#"    
       - icon: github
         href: https://github.com/
@@ -35,33 +35,15 @@ website:
         - section: "안전관리자업무"
           href: posts/practice/duty/duty.qmd
           contents:  
-            - section: "안전관리규정 준수여부 점검"
+            - text: "안전관리규정 준수여부 점검"
               href: posts/practice/duty/smr_revising.qmd
-              contents:
-                - posts/inspection/education_training/education_training.qmd
-            - section: "기술기준 준수여부 점검"
-              href: posts/practice/duty/smr_revising.qmd
-              contents:
-                - posts/inspection/education_training/education_training.qmd
-            - section: "종사자 및 출입자에 대한 장해방지조치"
-              href: posts/practice/duty/smr_revising.qmd
-              contents:
-                - posts/inspection/education_training/education_training.qmd
-            - section: "사용자에 대한 안전관리에 대한 조치 권고"
-              href: posts/practice/duty/smr_revising.qmd
-              contents:
-                - posts/inspection/education_training/education_training.qmd                  
-        - section: "안전관리자인력"  
-          href: posts/practice/resource/resource.qmd
-          contents:          
-          - posts/practice/duty/rsr_revising.qmd
-          - posts/practice/duty/sar_revising.qmd          
-          - posts/practice/duty/RI_purchase.qmd  
-          - posts/practice/duty/measurement_contamination_management.qmd 
-        - section: "안전관리자인력"
-          href: posts/practice/resource/resource.qmd
-          contents:
-          - posts/practice/resource/resource.qmd      
+            - text: "기술기준 준수여부 점검"
+              href: posts/practice/duty/technical_criteria.qmd
+            - text: "방사선장해방지조치"
+              href: posts/practice/duty/protection.qmd
+            - text: "안전관리에 대한 조치 권고"
+            - text: "안전관리자 업무요약"
+              href: posts/practice/duty/summary.qmd
         - section: "정기검사 수검준비"
           href: posts/inspection/guidelines/guidelines.qmd
           contents:
@@ -163,7 +145,7 @@ format:
     # bibliography: references.bib
     csl: references/nuclear-medicine-and-molecular-imaging.csl
     toc: true
-    toc-depth: 4
+    toc-depth: 6
     date-format: "YYYY.M.D"
     date-modified-format: "YYYY.M.D"    
     include-after-body:
