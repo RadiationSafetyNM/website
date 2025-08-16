@@ -8,10 +8,7 @@ project:
 website:
   title: "Template"
   navbar:
-    tools:
-      - icon: github
-        href: https://github.com/rpythonstudy/rpy-quarto-template
-    left:
+     left:
       - text: "Blog"
         href: index.qmd
       - text: "About"
