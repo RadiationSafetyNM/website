@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blog – Template</title>
+<title>블로그 – 방사선안전관리</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b4af785bccbe96877ebdb8ae6fbd0d5b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-982b584ddbe2e4eb8abcc9b342571f64.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,7 +80,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
@@ -129,18 +130,21 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles/styles.css">
+<link rel="stylesheet" href="styles/tooltip.css">
 </head>
 
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./KSNM_logo.png" alt="" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Template</span>
+    <span class="navbar-title">방사선안전관리</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -150,12 +154,43 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Blog</span></a>
+    <a class="nav-link" href="./posts/manual.html"> 
+<span class="menu-text">사이트사용법</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./posts/about.html"> 
-<span class="menu-text">About</span></a>
+    <a class="nav-link" href="./posts/practice/duty/duty.html"> 
+<span class="menu-text">안전관리실무</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./posts/optimization/optimization.html"> 
+<span class="menu-text">영상품질·선량최적화</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./posts/suggestion/index.html"> 
+<span class="menu-text">규제개선제안</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">블로그</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./posts/ICRP/icrp.html"> 
+<span class="menu-text">ICRP출판물</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./posts/link.html"> 
+<span class="menu-text">관련 사이트</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./#"> 
+<span class="menu-text">version 0.3.0 (2025-05-28)</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -165,33 +200,32 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Blog</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(52)</span></div><div class="category" data-category="SUNSUA==">ICRP <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aW50cm9kdWN0aW9u">introduction <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aXNzdWU=">issue <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UkklRUMlOUElQjQlRUMlODYlQTE=">RI운송 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVBJUIxJUI0JUVBJUIwJTk1JUVDJUE3JTg0JUVCJThCJUE4">건강진단 <span class="quarto-category-count">(4)</span></div><div class="category" data-category="JUVBJUIyJUJEJUVCJUFGJUI4JUVEJTk1JTlDJUVDJTgyJUFDJUVEJTk1JUFE">경미한사항 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVBJUI1JTkwJUVDJTlDJUExJUVEJTlCJTg4JUVCJUEwJUE4">교육훈련 <span class="quarto-category-count">(4)</span></div><div class="category" data-category="JUVBJUI3JTlDJUVDJUEwJTlDJUVBJUIwJTlDJUVDJTg0JUEw">규제개선 <span class="quarto-category-count">(3)</span></div><div class="category" data-category="JUVBJUI4JUIwJUVCJUExJTlEJUVBJUIzJUJDJTIwJUVCJUI5JTg0JUVDJUI5JTk4">기록과 비치 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="JUVBJUI4JUIwJUVDJTg4JUEwJUVBJUI4JUIwJUVDJUE0JTgw">기술기준 <span class="quarto-category-count">(4)</span></div><div class="category" data-category="JUVCJUE5JUI0JUVEJTk3JTg4JUVDJTlFJTkw">면허자 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVCJUIwJUE5JUVDJTgyJUFDJUVDJTg0JUEwJUVDJTk1JTg4JUVDJUEwJTg0JUVBJUI0JTgwJUVCJUE2JUFDJUVBJUI3JTlDJUVDJUEwJTk1">방사선안전관리규정 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVCJUIwJUE5JUVDJTgyJUFDJUVDJTg0JUEwJUVDJTk1JTg4JUVDJUEwJTg0JUVBJUI0JTgwJUVCJUE2JUFDJUVDJTlFJTkw">방사선안전관리자 <span class="quarto-category-count">(6)</span></div><div class="category" data-category="JUVCJUIwJUE5JUVDJTgyJUFDJUVDJTg0JUEwJUVDJTlFJTkxJUVDJTk3JTg1JUVDJUEyJTg1JUVDJTgyJUFDJUVDJTlFJTkw">방사선작업종사자 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="JUVCJUIzJTgwJUVBJUIyJUJEJUVDJThCJUEwJUVBJUIzJUEw">변경신고 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="JUVCJUIzJTgwJUVBJUIyJUJEJUVDJThCJUEwJUVBJUIzJUEwJTIwJUVCJUFGJUI4JUVDJThCJUEwJUVBJUIzJUEw">변경신고 미신고 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVCJUIzJTgwJUVBJUIyJUJEJUVEJTk3JTg4JUVBJUIwJTgw">변경허가 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="JUVCJUIzJUI0JUVBJUIzJUEw">보고 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="JUVCJUIzJUI0JUVBJUIzJUEwJUVDJUE0JTkxJUVCJUIzJUI1">보고중복 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVCJUIzJUI0JUVDJTg4JTk4JUVBJUI1JTkwJUVDJTlDJUEx">보수교육 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJTgyJUFDJUVDJTlBJUE5JUVCJUIyJTk1">사용법 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJTgyJUFDJUVDJTlEJUI0JUVEJThBJUI4">사이트 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJTg0JUEwJUVCJTlGJTg5">선량 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJTg0JUEwJUVCJTlGJTg5JUUzJTg2JThEJUVDJTk4JUE0JUVDJTk3JUJDJUVDJUI4JUExJUVDJUEwJTk1">선량ㆍ오염측정 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="JUVDJTg0JUEwJUVEJTk4JTk1JUVBJUIwJTgwJUVDJTg2JThEJUVBJUI4JUIwJTIwJUVEJTkyJTg4JUVDJUE3JTg4JUVBJUI0JTgwJUVCJUE2JUFDJTIwJUVCJUFGJUI4JUVDJTlEJUI0JUVEJTk2JTg5">선형가속기 품질관리 미이행 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJTg4JTk4JUVBJUIyJTgwJUVDJUE0JTgwJUVCJUI5JTg0">수검준비 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="JUVDJThCJTlDJUVDJTg0JUE0JUVBJUIyJTgwJUVDJTgyJUFD">시설검사 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="JUVDJThCJUEwJUVBJUI3JTlDJUVBJUI1JTkwJUVDJTlDJUEx">신규교육 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJThCJUEwJUVBJUI3JTlDJUVDJUEyJTg1JUVDJTgyJUFDJUVDJTlFJTkw">신규종사자 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJThCJUE0JUVCJUFDJUI0">실무 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJTk1JTg4JUVDJUEwJTg0JUVBJUI0JTgwJUVCJUE2JUFDJUVBJUI3JTlDJUVDJUEwJTk1">안전관리규정 <span class="quarto-category-count">(4)</span></div><div class="category" data-category="JUVDJTk3JTg1JUVCJUFDJUI0">업무 <span class="quarto-category-count">(5)</span></div><div class="category" data-category="JUVDJTk4JTgxJUVDJTgzJTgxJUVBJUIyJTgwJUVDJTgyJUFD">영상검사 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJTk4JTgxJUVDJTgzJTgxJUVEJTkyJTg4JUVDJUE3JTg4">영상품질 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJTlEJUI4JUVCJUEwJUE1">인력 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJTlEJUI4JUVDJUIyJUI0JUUzJTg2JThEJUVCJUFDJUJDJUVEJTkyJTg4JUVDJTk4JUE0JUVDJTk3JUJDJUVCJThGJTg0JTIwJUVCJUFGJUI4JUVDJUI4JUExJUVDJUEwJTk1">인체ㆍ물품오염도 미측정 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJTlFJTkwJUVDJUIyJUI0JUVDJUIyJTk4JUVCJUI2JTg0">자체처분 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="JUVDJTlFJUE1JUVCJUI5JTg0JUUzJTg2JThEJUVDJTlEJUI4JUVCJUEwJUE1">장비ㆍ인력 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="JUVDJUEwJTgxJUVDJUEwJTk1JUVDJTg0JUIx">적정성 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD">정기검사 <span class="quarto-category-count">(34)</span></div><div class="category" data-category="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUI1JTkwJUVDJTlDJUEx">정기교육 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJUEwJTk1JUVBJUI4JUIwJUVDJUEwJTkwJUVBJUIyJTgwJTIwJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE">정기점검 지적사항 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJUEyJTg1JUVDJTgyJUFDJUVDJTlFJTkw">종사자 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJUE3JTgwJUVDJUEwJTgxJUVBJUI2JThDJUVBJUIzJUEwJUVDJTgyJUFDJUVEJTk1JUFE">지적권고사항 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE">지적사항 <span class="quarto-category-count">(31)</span></div><div class="category" data-category="JUVDJUI1JTlDJUVDJUEwJTgxJUVEJTk5JTk0">최적화 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVEJTg3JUI0JUVDJUE3JTgxJUVDJTlFJTkw">퇴직자 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVEJTkxJTlDJUVCJUE5JUI0JUVDJTk4JUE0JUVDJTk3JUJDJUVCJThGJTg0">표면오염도 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVEJTkxJTlDJUVDJUE3JTgwJUUzJTg2JThEJUVDJUEzJUJDJUVDJTlEJTk4JUVDJTgyJUFDJUVEJTk1JUFEJTIwJUVCJUFGJUI4JUVBJUIyJThDJUVDJThCJTlD">표지ㆍ주의사항 미게시 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVEJTk0JUJDJUVEJThGJUFEJUVBJUI0JTgwJUVCJUE2JUFD">피폭관리 <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">블로그</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
 
 
 
@@ -225,7 +259,203 @@ window.Quarto = {
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1755270000000" data-listing-file-modified-sort="1755333790701" data-listing-date-modified-sort="1755333790000" data-listing-reading-time-sort="1" data-listing-word-count-sort="141">
+<div class="quarto-post image-right" data-index="0" data-categories="JUVDJTgyJUFDJUVDJTlBJUE5JUVCJUIyJTk1" data-listing-date-sort="1734620400000" data-listing-file-modified-sort="1755390206571" data-listing-date-modified-sort="1755390206000" data-listing-reading-time-sort="5" data-listing-word-count-sort="808">
+<div class="thumbnail"><a href="./posts/manual.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/manual.html" class="no-external">사이트사용법</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTgyJUFDJUVDJTlBJUE5JUVCJUIyJTk1'); return false;">사용법</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/manual.html" class="no-external">
+<p>이 웹사이트 고유의 사용법이 설명되어 있습니다.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/manual.html" class="no-external">
+<div class="listing-date">
+2024.12.20
+</div>
+<div class="listing-author">
+대한핵의학회<br>방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="JUVCJUIwJUE5JUVDJTgyJUFDJUVDJTg0JUEwJUVDJTk1JTg4JUVDJUEwJTg0JUVBJUI0JTgwJUVCJUE2JUFDJUVDJTlFJTkwJTJDJUVDJTk3JTg1JUVCJUFDJUI0" data-listing-date-sort="1748358000000" data-listing-file-modified-sort="1755389744708" data-listing-date-modified-sort="1755389744000" data-listing-reading-time-sort="1" data-listing-word-count-sort="89">
+<div class="thumbnail"><a href="./posts/practice/duty/summary.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/practice/duty/summary.html" class="no-external">방사선안전관리자 업무요약</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVCJUIwJUE5JUVDJTgyJUFDJUVDJTg0JUEwJUVDJTk1JTg4JUVDJUEwJTg0JUVBJUI0JTgwJUVCJUE2JUFDJUVDJTlFJTkw'); return false;">방사선안전관리자</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTk3JTg1JUVCJUFDJUI0'); return false;">업무</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/practice/duty/summary.html" class="no-external">
+<p>방사선안전관리자의 업무를 요약했습니다..</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/practice/duty/summary.html" class="no-external">
+<div class="listing-date">
+2025.5.28
+</div>
+<div class="listing-author">
+대한핵의학회<br>방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="JUVCJUIwJUE5JUVDJTgyJUFDJUVDJTg0JUEwJUVDJTk1JTg4JUVDJUEwJTg0JUVBJUI0JTgwJUVCJUE2JUFDJUVDJTlFJTkwJTJDJUVDJTk3JTg1JUVCJUFDJUI0JTJDJUVDJTk1JTg4JUVDJUEwJTg0JUVBJUI0JTgwJUVCJUE2JUFDJUVBJUI3JTlDJUVDJUEwJTk1" data-listing-date-sort="1732633200000" data-listing-file-modified-sort="1755389744708" data-listing-date-modified-sort="1755389744000" data-listing-reading-time-sort="9" data-listing-word-count-sort="1797">
+<div class="thumbnail"><a href="./posts/practice/duty/smr_revising.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/practice/duty/smr_revising.html" class="no-external">안전관리규정 준수여부 점검</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVCJUIwJUE5JUVDJTgyJUFDJUVDJTg0JUEwJUVDJTk1JTg4JUVDJUEwJTg0JUVBJUI0JTgwJUVCJUE2JUFDJUVDJTlFJTkw'); return false;">방사선안전관리자</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTk3JTg1JUVCJUFDJUI0'); return false;">업무</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTk1JTg4JUVDJUEwJTg0JUVBJUI0JTgwJUVCJUE2JUFDJUVBJUI3JTlDJUVDJUEwJTk1'); return false;">안전관리규정</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/practice/duty/smr_revising.html" class="no-external">
+<p>안전관리규정 준수여부의 점검을 위해 규정에 포함되어야 할 사항들과 작성지침에 대한 이해가 필요하여 정리하였습니다.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/practice/duty/smr_revising.html" class="no-external">
+<div class="listing-date">
+2024.11.27
+</div>
+<div class="listing-author">
+대한핵의학회<br>방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="JUVCJUIwJUE5JUVDJTgyJUFDJUVDJTg0JUEwJUVDJTk1JTg4JUVDJUEwJTg0JUVBJUI0JTgwJUVCJUE2JUFDJUVDJTlFJTkwJTJDJUVDJTk3JTg1JUVCJUFDJUI0" data-listing-date-sort="1732633200000" data-listing-file-modified-sort="1755389744704" data-listing-date-modified-sort="1755389744000" data-listing-reading-time-sort="1" data-listing-word-count-sort="56">
+<div class="thumbnail"><a href="./posts/practice/duty/duty.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/practice/duty/duty.html" class="no-external">방사선안전관리자 업무</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVCJUIwJUE5JUVDJTgyJUFDJUVDJTg0JUEwJUVDJTk1JTg4JUVDJUEwJTg0JUVBJUI0JTgwJUVCJUE2JUFDJUVDJTlFJTkw'); return false;">방사선안전관리자</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTk3JTg1JUVCJUFDJUI0'); return false;">업무</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/practice/duty/duty.html" class="no-external">
+<p>방사선안전관리자의 업무를 체계적으로 이해하기 위해 법령규칙에 기술된 업무를 정리했습니다.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/practice/duty/duty.html" class="no-external">
+<div class="listing-date">
+2024.11.27
+</div>
+<div class="listing-author">
+대한핵의학회<br>방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="JUVCJUIwJUE5JUVDJTgyJUFDJUVDJTg0JUEwJUVDJTk1JTg4JUVDJUEwJTg0JUVBJUI0JTgwJUVCJUE2JUFDJUVDJTlFJTkwJTJDJUVDJTk3JTg1JUVCJUFDJUI0JTJDJUVDJTk1JTg4JUVDJUEwJTg0JUVBJUI0JTgwJUVCJUE2JUFDJUVBJUI3JTlDJUVDJUEwJTk1" data-listing-date-sort="1732633200000" data-listing-file-modified-sort="1755389744708" data-listing-date-modified-sort="1755389744000" data-listing-reading-time-sort="22" data-listing-word-count-sort="4225">
+<div class="thumbnail"><a href="./posts/practice/duty/technical_criteria.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/practice/duty/technical_criteria.html" class="no-external">기술기준 준수여부 점검</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVCJUIwJUE5JUVDJTgyJUFDJUVDJTg0JUEwJUVDJTk1JTg4JUVDJUEwJTg0JUVBJUI0JTgwJUVCJUE2JUFDJUVDJTlFJTkw'); return false;">방사선안전관리자</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTk3JTg1JUVCJUFDJUI0'); return false;">업무</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTk1JTg4JUVDJUEwJTg0JUVBJUI0JTgwJUVCJUE2JUFDJUVBJUI3JTlDJUVDJUEwJTk1'); return false;">안전관리규정</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/practice/duty/technical_criteria.html" class="no-external">
+<p>기술기준 준수여부의 점검을 위해 알아야 할 관련법령규칙을 정리하였습니다.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/practice/duty/technical_criteria.html" class="no-external">
+<div class="listing-date">
+2024.11.27
+</div>
+<div class="listing-author">
+대한핵의학회<br>방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="JUVCJUIwJUE5JUVDJTgyJUFDJUVDJTg0JUEwJUVDJTk1JTg4JUVDJUEwJTg0JUVBJUI0JTgwJUVCJUE2JUFDJUVDJTlFJTkwJTJDJUVDJTk3JTg1JUVCJUFDJUI0JTJDJUVDJTk1JTg4JUVDJUEwJTg0JUVBJUI0JTgwJUVCJUE2JUFDJUVBJUI3JTlDJUVDJUEwJTk1" data-listing-date-sort="1732633200000" data-listing-file-modified-sort="1755389744708" data-listing-date-modified-sort="1755389744000" data-listing-reading-time-sort="7" data-listing-word-count-sort="1234">
+<div class="thumbnail"><a href="./posts/practice/duty/protection.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/practice/duty/protection.html" class="no-external">방사선장해방지조치</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVCJUIwJUE5JUVDJTgyJUFDJUVDJTg0JUEwJUVDJTk1JTg4JUVDJUEwJTg0JUVBJUI0JTgwJUVCJUE2JUFDJUVDJTlFJTkw'); return false;">방사선안전관리자</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTk3JTg1JUVCJUFDJUI0'); return false;">업무</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTk1JTg4JUVDJUEwJTg0JUVBJUI0JTgwJUVCJUE2JUFDJUVBJUI3JTlDJUVDJUEwJTk1'); return false;">안전관리규정</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/practice/duty/protection.html" class="no-external">
+<p>방사선장해방지조치를 대한 내용을 정리하였습니다.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/practice/duty/protection.html" class="no-external">
+<div class="listing-date">
+2024.11.27
+</div>
+<div class="listing-author">
+대한핵의학회<br>방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1755270000000" data-listing-file-modified-sort="1755388706708" data-listing-date-modified-sort="1755388706000" data-listing-reading-time-sort="1" data-listing-word-count-sort="141">
 <div class="thumbnail"><a href="./posts/about.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -242,7 +472,7 @@ window.Quarto = {
 <div class="metadata">
 <a href="./posts/about.html" class="no-external">
 <div class="listing-date">
-Aug 16, 2025
+2025.8.16
 </div>
 <div class="listing-author">
 BenKorea
@@ -250,11 +480,1575 @@ BenKorea
 </a>
 </div>
 </div>
+<div class="quarto-post image-right" data-index="7" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJTg4JTk4JUVBJUIyJTgwJUVDJUE0JTgwJUVCJUI5JTg0" data-listing-date-sort="1731682800000" data-listing-file-modified-sort="1755389744693" data-listing-date-modified-sort="1748185200000" data-listing-reading-time-sort="5" data-listing-word-count-sort="888">
+<div class="thumbnail"><a href="./posts/inspection/guidelines/guidelines.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/guidelines/guidelines.html" class="no-external">방사선분야 정기검사수검가이드</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTg4JTk4JUVBJUIyJTgwJUVDJUE0JTgwJUVCJUI5JTg0'); return false;">수검준비</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/guidelines/guidelines.html" class="no-external">
+한국원자력안전기술원에서 2022년 공개한 방사선분야 정기검사수검가이드를 아래에 첨부하였습니다.<br>
+3 part로 이루어져 있는데 의료와 관련된 것은 ‘Part 1. RI등 허가사용자 정기검사 수검 가이드’ 부분이며 포함된 목차는 아래와 같습니다.<br>
+아래의 가이드에 포함되어 있더라도 관련 법령ㆍ규칙ㆍ고시가 가이드…<br><span style="color:red"><strong></strong></span>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/guidelines/guidelines.html" class="no-external">
+<div class="listing-date">
+2024.11.16
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="8" data-categories="JUVDJTk4JTgxJUVDJTgzJTgxJUVEJTkyJTg4JUVDJUE3JTg4JTJDJUVDJTg0JUEwJUVCJTlGJTg5JTJDJUVDJUI1JTlDJUVDJUEwJTgxJUVEJTk5JTk0" data-listing-date-sort="1739458800000" data-listing-file-modified-sort="1755389744704" data-listing-date-modified-sort="1739458800000" data-listing-reading-time-sort="20" data-listing-word-count-sort="3898">
+<div class="thumbnail"><a href="./posts/optimization/optimization.html" class="no-external">
+
+<p class="card-img-top"><img src="posts/optimization/images/clipboard-735047486.png"  class="thumbnail-image card-img"/></p>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/optimization/optimization.html" class="no-external">영상품질·선량최적화</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTk4JTgxJUVDJTgzJTgxJUVEJTkyJTg4JUVDJUE3JTg4'); return false;">영상품질</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTg0JUEwJUVCJTlGJTg5'); return false;">선량</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUI1JTlDJUVDJUEwJTgxJUVEJTk5JTk0'); return false;">최적화</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/optimization/optimization.html" class="no-external">
+<p>핵의학 영상품질과 선량최적화를 위한 사이트입니다.<br> Consensus 및 정리가 필요하므로 최적화팀만 참고하시길 바랍니다.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/optimization/optimization.html" class="no-external">
+<div class="listing-date">
+2025.2.14
+</div>
+<div class="listing-author">
+대한핵의학회<br>방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="9" data-categories="SUNSUA==" data-listing-date-sort="1739113200000" data-listing-file-modified-sort="1755389744686" data-listing-date-modified-sort="1739113200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="thumbnail"><a href="./posts/ICRP/icrp.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/ICRP/icrp.html" class="no-external">ICRP출판물</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('SUNSUA=='); return false;">ICRP</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/ICRP/icrp.html" class="no-external">
+<p>ICRP Publication 링크를 제공합니다.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/ICRP/icrp.html" class="no-external">
+<div class="listing-date">
+2025.2.10
+</div>
+<div class="listing-author">
+대한핵의학회<br>방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="10" data-categories="JUVDJThCJUE0JUVCJUFDJUI0" data-listing-date-sort="1732287600000" data-listing-file-modified-sort="1755389744708" data-listing-date-modified-sort="1736694000000" data-listing-reading-time-sort="1" data-listing-word-count-sort="13">
+<div class="thumbnail"><a href="./posts/practice/practice.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/practice/practice.html" class="no-external">안전관리실무</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJThCJUE0JUVCJUFDJUI0'); return false;">실무</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/practice/practice.html" class="no-external">
+<p>Top메뉴와 sidebar메뉴를 연결하기 위한 웹페이지입니다.<br> 본문에는 안전관리실무 메뉴의 목적과 진행상황이 간단히 기술되어 있습니다.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/practice/practice.html" class="no-external">
+<div class="listing-date">
+2024.11.23
+</div>
+<div class="listing-author">
+대한핵의학회<br>방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="11" data-categories="aXNzdWUlMkMlRUMlOTglODElRUMlODMlODElRUElQjIlODAlRUMlODIlQUMlMkMlRUMlQTAlODElRUMlQTAlOTUlRUMlODQlQjE=" data-listing-date-sort="1732114800000" data-listing-file-modified-sort="1755389744708" data-listing-date-modified-sort="1736694000000" data-listing-reading-time-sort="1" data-listing-word-count-sort="163">
+<div class="thumbnail"><a href="./posts/suggestion/optimization/approriate.html" class="no-external">
+
+<p class="card-img-top"><img src="posts/suggestion/optimization/image/영상검사적정성지표.JPG"  class="thumbnail-image card-img"/></p>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/suggestion/optimization/approriate.html" class="no-external">영상검사 적정성평가</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('aXNzdWU='); return false;">issue</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTk4JTgxJUVDJTgzJTgxJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">영상검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTgxJUVDJUEwJTk1JUVDJTg0JUIx'); return false;">적정성</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/suggestion/optimization/approriate.html" class="no-external">
+2023년 영상검사 적정성 1차 평가에서 지표 중 하나로 <code>PET 방사성의약품 진단참고수준 이하 투여율</code>을 선정하여 조사가 시행되었고, 이 [지표 5]가 바람직하지 못하므로 검토가 필요 <span class="citation" data-cites="geongangboheomsimsapyeonggaweon2023">[1]</span>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/suggestion/optimization/approriate.html" class="no-external">
+<div class="listing-date">
+2024.11.21
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="12" data-categories="JUVDJTgyJUFDJUVDJTlEJUI0JUVEJThBJUI4" data-listing-date-sort="1736002800000" data-listing-file-modified-sort="1755389744700" data-listing-date-modified-sort="1736002800000" data-listing-reading-time-sort="1" data-listing-word-count-sort="79">
+<div class="thumbnail"><a href="./posts/link.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/link.html" class="no-external">관련 사이트</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTgyJUFDJUVDJTlEJUI0JUVEJThBJUI4'); return false;">사이트</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/link.html" class="no-external">
+<p>방사선안전관리 정보에 유용한 사이트를 정리한 것입니다.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/link.html" class="no-external">
+<div class="listing-date">
+2025.1.5
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="13" data-categories="JUVCJUIwJUE5JUVDJTgyJUFDJUVDJTg0JUEwJUVDJTk1JTg4JUVDJUEwJTg0JUVBJUI0JTgwJUVCJUE2JUFDJUVDJTlFJTkwJTJDJUVDJTlEJUI4JUVCJUEwJUE1" data-listing-date-sort="1732633200000" data-listing-file-modified-sort="1755389744708" data-listing-date-modified-sort="1734966000000" data-listing-reading-time-sort="3" data-listing-word-count-sort="462">
+<div class="thumbnail"><a href="./posts/practice/resource/resource.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/practice/resource/resource.html" class="no-external">방사선안전관리자 인력</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVCJUIwJUE5JUVDJTgyJUFDJUVDJTg0JUEwJUVDJTk1JTg4JUVDJUEwJTg0JUVBJUI0JTgwJUVCJUE2JUFDJUVDJTlFJTkw'); return false;">방사선안전관리자</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTlEJUI4JUVCJUEwJUE1'); return false;">인력</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/practice/resource/resource.html" class="no-external">
+<p>방사선안전관리자의 인력에 대해 정리한 것입니다.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/practice/resource/resource.html" class="no-external">
+<div class="listing-date">
+2024.11.27
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="14" data-categories="JUVBJUI3JTlDJUVDJUEwJTlDJUVBJUIwJTlDJUVDJTg0JUEw" data-listing-date-sort="1731855600000" data-listing-file-modified-sort="1755389744708" data-listing-date-modified-sort="1731855600000" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="thumbnail"><a href="./posts/suggestion/index.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/suggestion/index.html" class="no-external">규제개선 제안사항</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVBJUI3JTlDJUVDJUEwJTlDJUVBJUIwJTlDJUVDJTg0JUEw'); return false;">규제개선</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/suggestion/index.html" class="no-external">
+규제개선이 필요한 사항들을 정리하는 곳입니다.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/suggestion/index.html" class="no-external">
+<div class="listing-date">
+2024.11.18
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="15" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVBJUIxJUI0JUVBJUIwJTk1JUVDJUE3JTg0JUVCJThCJUE4JTJDJUVDJThCJUEwJUVBJUI3JTlDJUVDJUEyJTg1JUVDJTgyJUFDJUVDJTlFJTkw" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744693" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="29">
+<div class="thumbnail"><a href="./posts/inspection/health_examination/health_examination_new_workers.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/health_examination/health_examination_new_workers.html" class="no-external">신규종사자 미실시</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVBJUIxJUI0JUVBJUIwJTk1JUVDJUE3JTg0JUVCJThCJUE4'); return false;">건강진단</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJThCJUEwJUVBJUI3JTlDJUVDJUEyJTg1JUVDJTgyJUFDJUVDJTlFJTkw'); return false;">신규종사자</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/health_examination/health_examination_new_workers.html" class="no-external">
+원자력관계사업자는 방사선장해를 방지하기 위하여 방사선작업종사자에게 건강진단을 실시하여야 하나 이를 준수하지 않아서 이를 지적함
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/health_examination/health_examination_new_workers.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="16" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVBJUIxJUI0JUVBJUIwJTk1JUVDJUE3JTg0JUVCJThCJUE4" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744693" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="3" data-listing-word-count-sort="440">
+<div class="thumbnail"><a href="./posts/inspection/health_examination/health_examination.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/health_examination/health_examination.html" class="no-external">건강진단</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVBJUIxJUI0JUVBJUIwJTk1JUVDJUE3JTg0JUVCJThCJUE4'); return false;">건강진단</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/health_examination/health_examination.html" class="no-external">
+건강진단과 관련된 법령ㆍ규칙ㆍ고시는 아래와 같습니다.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/health_examination/health_examination.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="17" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVBJUIxJUI0JUVBJUIwJTk1JUVDJUE3JTg0JUVCJThCJUE4JTJDJUVEJTg3JUI0JUVDJUE3JTgxJUVDJTlFJTkw" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744693" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="35">
+<div class="thumbnail"><a href="./posts/inspection/health_examination/health_examination_retired.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/health_examination/health_examination_retired.html" class="no-external">퇴직자 미실시</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVBJUIxJUI0JUVBJUIwJTk1JUVDJUE3JTg0JUVCJThCJUE4'); return false;">건강진단</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVEJTg3JUI0JUVDJUE3JTgxJUVDJTlFJTkw'); return false;">퇴직자</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/health_examination/health_examination_retired.html" class="no-external">
+
+
+<ul>
+<li>원자력안전법 시행규칙 제121조(건강진단) 2항2호에 따라 방사선작업종사자는 매년 건강검진을 받아야 하나, 동 병원은 201X년도 방사선작업종사자 12명 중 OOO(종양학과 과장, 1X년 퇴사) 및 OOO(종양학과 의학물리사 , 1X년 퇴사) 2명이 방사선작업종사자로 등록되었으나, 건강검진을 받지 않았었음.</li>…</ul>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/health_examination/health_examination_retired.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="18" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVBJUIxJUI0JUVBJUIwJTk1JUVDJUE3JTg0JUVCJThCJUE4JTJDJUVDJUEyJTg1JUVDJTgyJUFDJUVDJTlFJTkw" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744693" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
+<div class="thumbnail"><a href="./posts/inspection/health_examination/health_examination_workers.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/health_examination/health_examination_workers.html" class="no-external">종사자 미실시</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVBJUIxJUI0JUVBJUIwJTk1JUVDJUE3JTg0JUVCJThCJUE4'); return false;">건강진단</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEyJTg1JUVDJTgyJUFDJUVDJTlFJTkw'); return false;">종사자</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/health_examination/health_examination_workers.html" class="no-external">
+원자력관계사업자는 방사선장해를 방지하기 위하여 방사선작업종사자에게 건강진단을 실시하여야 하나 이를 준수하지 않아서 이를 지적함
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/health_examination/health_examination_workers.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="19" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVBJUI1JTkwJUVDJTlDJUExJUVEJTlCJTg4JUVCJUEwJUE4JTJDJUVCJUE5JUI0JUVEJTk3JTg4JUVDJTlFJTkwJTJDJUVCJUIzJUI0JUVDJTg4JTk4JUVBJUI1JTkwJUVDJTlDJUEx" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744689" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="42">
+<div class="thumbnail"><a href="./posts/inspection/education_training/licensees_continuing.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/education_training/licensees_continuing.html" class="no-external">면허자 보수교육 미이수</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVBJUI1JTkwJUVDJTlDJUExJUVEJTlCJTg4JUVCJUEwJUE4'); return false;">교육훈련</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVCJUE5JUI0JUVEJTk3JTg4JUVDJTlFJTkw'); return false;">면허자</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVCJUIzJUI0JUVDJTg4JTk4JUVBJUI1JTkwJUVDJTlDJUEx'); return false;">보수교육</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/education_training/licensees_continuing.html" class="no-external">
+방사선안전관리자는 3년마다 보수교육을 받아야 하나 다음과 같이 이를 위반하였음.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/education_training/licensees_continuing.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="20" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVBJUI1JTkwJUVDJTlDJUExJUVEJTlCJTg4JUVCJUEwJUE4JTJDJUVCJUIwJUE5JUVDJTgyJUFDJUVDJTg0JUEwJUVDJTlFJTkxJUVDJTk3JTg1JUVDJUEyJTg1JUVDJTgyJUFDJUVDJTlFJTkwJTJDJUVDJUEwJTk1JUVBJUI4JUIwJUVBJUI1JTkwJUVDJTlDJUEx" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744689" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
+<div class="thumbnail"><a href="./posts/inspection/education_training/radiation_workers_regular.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/education_training/radiation_workers_regular.html" class="no-external">종사자 정기교육 미실시</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVBJUI1JTkwJUVDJTlDJUExJUVEJTlCJTg4JUVCJUEwJUE4'); return false;">교육훈련</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVCJUIwJUE5JUVDJTgyJUFDJUVDJTg0JUEwJUVDJTlFJTkxJUVDJTk3JTg1JUVDJUEyJTg1JUVDJTgyJUFDJUVDJTlFJTkw'); return false;">방사선작업종사자</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUI1JTkwJUVDJTlDJUEx'); return false;">정기교육</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/education_training/radiation_workers_regular.html" class="no-external">
+원자력관계사업자는 방사선작업종사자에게 대통령령으로 정하는 바에 따라 원자력이용에 따르는 안전성확보 및 방사선장해방지에 필요한 교육훈련을 실시하여야 하나 이를 준수하지 않았음
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/education_training/radiation_workers_regular.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="21" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVBJUI1JTkwJUVDJTlDJUExJUVEJTlCJTg4JUVCJUEwJUE4" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744689" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="3" data-listing-word-count-sort="489">
+<div class="thumbnail"><a href="./posts/inspection/education_training/education_training.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/education_training/education_training.html" class="no-external">교육훈련</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVBJUI1JTkwJUVDJTlDJUExJUVEJTlCJTg4JUVCJUEwJUE4'); return false;">교육훈련</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/education_training/education_training.html" class="no-external">
+교육훈련과 관련된 법령규칙고시은 아래와 같습니다.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/education_training/education_training.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="22" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVBJUI1JTkwJUVDJTlDJUExJUVEJTlCJTg4JUVCJUEwJUE4JTJDJUVCJUIwJUE5JUVDJTgyJUFDJUVDJTg0JUEwJUVDJTlFJTkxJUVDJTk3JTg1JUVDJUEyJTg1JUVDJTgyJUFDJUVDJTlFJTkwJTJDJUVDJThCJUEwJUVBJUI3JTlDJUVBJUI1JTkwJUVDJTlDJUEx" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744689" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="64">
+<div class="thumbnail"><a href="./posts/inspection/education_training/radiation_workers_inductory.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/education_training/radiation_workers_inductory.html" class="no-external">종사자 신규교육 미실시</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVBJUI1JTkwJUVDJTlDJUExJUVEJTlCJTg4JUVCJUEwJUE4'); return false;">교육훈련</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVCJUIwJUE5JUVDJTgyJUFDJUVDJTg0JUEwJUVDJTlFJTkxJUVDJTk3JTg1JUVDJUEyJTg1JUVDJTgyJUFDJUVDJTlFJTkw'); return false;">방사선작업종사자</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJThCJUEwJUVBJUI3JTlDJUVBJUI1JTkwJUVDJTlDJUEx'); return false;">신규교육</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/education_training/radiation_workers_inductory.html" class="no-external">
+신규종사자에 대한 교육은 방사선작업종사 개시 전에 실시하여야 하나, 종사 개시 후 실시하였음
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/education_training/radiation_workers_inductory.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="23" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVDJThCJTlDJUVDJTg0JUE0JUVBJUIyJTgwJUVDJTgyJUFD" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744693" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="74">
+<div class="thumbnail"><a href="./posts/inspection/facility_inspection/facility_inspection_conducting.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/facility_inspection/facility_inspection_conducting.html" class="no-external">시설검사 미 수검</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJThCJTlDJUVDJTg0JUE0JUVBJUIyJTgwJUVDJTgyJUFD'); return false;">시설검사</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/facility_inspection/facility_inspection_conducting.html" class="no-external">
+방사성동위원소 사용허가자는 허가받은 사용시설등의 변경사항이 있을 경우 사용변경허가 및 시설검사에 합격한 후 사용하여야 하나, 동사업자소는 변경된 허가시설에 대하여 사용변경허가를 득한 후(방사선관리과-2XXX) 시설검사를 받지 아니하고 해당 시설을 사용하고 있음.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/facility_inspection/facility_inspection_conducting.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="24" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVDJThCJTlDJUVDJTg0JUE0JUVBJUIyJTgwJUVDJTgyJUFD" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744693" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="2" data-listing-word-count-sort="273">
+<div class="thumbnail"><a href="./posts/inspection/facility_inspection/facility_inspection.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/facility_inspection/facility_inspection.html" class="no-external">시설검사</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJThCJTlDJUVDJTg0JUE0JUVBJUIyJTgwJUVDJTgyJUFD'); return false;">시설검사</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/facility_inspection/facility_inspection.html" class="no-external">
+시설검사와 관련된 법령규칙고시는 아래와 같습니다.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/facility_inspection/facility_inspection.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="25" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVDJUEwJTkwJUVBJUIyJTgwJTIwJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVCJUIzJTgwJUVBJUIyJUJEJUVDJThCJUEwJUVBJUIzJUEwJTJDJUVCJUIzJTgwJUVBJUIyJUJEJUVDJThCJUEwJUVBJUIzJUEwJTIwJUVCJUFGJUI4JUVDJThCJUEwJUVBJUIzJUEw" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744689" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="2" data-listing-word-count-sort="348">
+<div class="thumbnail"><a href="./posts/inspection/alteration_reporting/alteration_reporting_conducting.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/alteration_reporting/alteration_reporting_conducting.html" class="no-external">변경신고 미신고</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVDJUEwJTkwJUVBJUIyJTgwJTIwJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">정기점검 지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVCJUIzJTgwJUVBJUIyJUJEJUVDJThCJUEwJUVBJUIzJUEw'); return false;">변경신고</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVCJUIzJTgwJUVBJUIyJUJEJUVDJThCJUEwJUVBJUIzJUEwJTIwJUVCJUFGJUI4JUVDJThCJUEwJUVBJUIzJUEw'); return false;">변경신고 미신고</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/alteration_reporting/alteration_reporting_conducting.html" class="no-external">
+한국원자력안전기술원에서 개최한 의료분야 안전관리 워크샵 (2017.10.24) 발표자료집에서 발췌 <span class="citation" data-cites="igibog2017">[1]</span>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/alteration_reporting/alteration_reporting_conducting.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="26" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVCJUIzJTgwJUVBJUIyJUJEJUVDJThCJUEwJUVBJUIzJUEwJTJDJUVBJUIyJUJEJUVCJUFGJUI4JUVEJTk1JTlDJUVDJTgyJUFDJUVEJTk1JUFE" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744689" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="2" data-listing-word-count-sort="365">
+<div class="thumbnail"><a href="./posts/inspection/alteration_reporting/alteration_reporting.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/alteration_reporting/alteration_reporting.html" class="no-external">변경신고</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVCJUIzJTgwJUVBJUIyJUJEJUVDJThCJUEwJUVBJUIzJUEw'); return false;">변경신고</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVBJUIyJUJEJUVCJUFGJUI4JUVEJTk1JTlDJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">경미한사항</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/alteration_reporting/alteration_reporting.html" class="no-external">
+변경신고와 관련된 법령규칙고시는 아래와 같습니다.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/alteration_reporting/alteration_reporting.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="27" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVBJUI4JUIwJUVDJTg4JUEwJUVBJUI4JUIwJUVDJUE0JTgw" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744697" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="3" data-listing-word-count-sort="415">
+<div class="thumbnail"><a href="./posts/inspection/technical_criteria/technical_criteria.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/technical_criteria/technical_criteria.html" class="no-external">기술기준</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVBJUI4JUIwJUVDJTg4JUEwJUVBJUI4JUIwJUVDJUE0JTgw'); return false;">기술기준</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/technical_criteria/technical_criteria.html" class="no-external">
+기술기준과 관련된 법령규칙고시는 아래와 같습니다.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/technical_criteria/technical_criteria.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="28" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVBJUI4JUIwJUVDJTg4JUEwJUVBJUI4JUIwJUVDJUE0JTgwJTJDJUVEJTkxJTlDJUVDJUE3JTgwJUUzJTg2JThEJUVDJUEzJUJDJUVDJTlEJTk4JUVDJTgyJUFDJUVEJTk1JUFEJTIwJUVCJUFGJUI4JUVBJUIyJThDJUVDJThCJTlD" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744700" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="25">
+<div class="thumbnail"><a href="./posts/inspection/technical_criteria/technical_criteria_warning.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/technical_criteria/technical_criteria_warning.html" class="no-external">표지ㆍ주의사항 미게시</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVBJUI4JUIwJUVDJTg4JUEwJUVBJUI4JUIwJUVDJUE0JTgw'); return false;">기술기준</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVEJTkxJTlDJUVDJUE3JTgwJUUzJTg2JThEJUVDJUEzJUJDJUVDJTlEJTk4JUVDJTgyJUFDJUVEJTk1JUFEJTIwJUVCJUFGJUI4JUVBJUIyJThDJUVDJThCJTlD'); return false;">표지ㆍ주의사항 미게시</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/technical_criteria/technical_criteria_warning.html" class="no-external">
+
+
+<ul>
+<li>방사성동위원소의 사용시설 및 분배시설 출입구과 배기설비에는 방사능표지와 주의사항을 게시하여야 하나, PET/CT 촬영실 입구, 분배시설 및 배기설비 등에 표지 및 주의사항을 게시하지 아니함.</li>
+</ul>
+
+
+
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/technical_criteria/technical_criteria_warning.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="29" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVBJUI4JUIwJUVDJTg4JUEwJUVBJUI4JUIwJUVDJUE0JTgwJTJDJUVDJTlEJUI4JUVDJUIyJUI0JUUzJTg2JThEJUVCJUFDJUJDJUVEJTkyJTg4JUVDJTk4JUE0JUVDJTk3JUJDJUVCJThGJTg0JTIwJUVCJUFGJUI4JUVDJUI4JUExJUVDJUEwJTk1" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744700" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="38">
+<div class="thumbnail"><a href="./posts/inspection/technical_criteria/technical_criteria_contamination_measurement.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/technical_criteria/technical_criteria_contamination_measurement.html" class="no-external">인체ㆍ물품오염도 미측정</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVBJUI4JUIwJUVDJTg4JUEwJUVBJUI4JUIwJUVDJUE0JTgw'); return false;">기술기준</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTlEJUI4JUVDJUIyJUI0JUUzJTg2JThEJUVCJUFDJUJDJUVEJTkyJTg4JUVDJTk4JUE0JUVDJTk3JUJDJUVCJThGJTg0JTIwJUVCJUFGJUI4JUVDJUI4JUExJUVDJUEwJTk1'); return false;">인체ㆍ물품오염도 미측정</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/technical_criteria/technical_criteria_contamination_measurement.html" class="no-external">
+
+
+<ul>
+<li>동 병원은 본관7층에 I-131 치료병실 2개를 운영 (201X년~현재)하고 있는데, 동 병실에서 퇴거하는 자(방사선/능 측정을 위해 출입하는 방사선작업종사자, 청소 및 시트교체 등 관리를 위해 출입하는 자)의 인체 및 인체에 착용하고 있는 물품의 방사성물질의 오염도을 측정하지 아니함.</li>
+</ul>
+
+
+
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/technical_criteria/technical_criteria_contamination_measurement.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="30" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVBJUI4JUIwJUVDJTg4JUEwJUVBJUI4JUIwJUVDJUE0JTgwJTJDJUVDJTg0JUEwJUVEJTk4JTk1JUVBJUIwJTgwJUVDJTg2JThEJUVBJUI4JUIwJTIwJUVEJTkyJTg4JUVDJUE3JTg4JUVBJUI0JTgwJUVCJUE2JUFDJTIwJUVCJUFGJUI4JUVDJTlEJUI0JUVEJTk2JTg5" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744700" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="29">
+<div class="thumbnail"><a href="./posts/inspection/technical_criteria/technical_criteria_quality_management.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/technical_criteria/technical_criteria_quality_management.html" class="no-external">선형가속기 품질관리 미이행</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVBJUI4JUIwJUVDJTg4JUEwJUVBJUI4JUIwJUVDJUE0JTgw'); return false;">기술기준</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTg0JUEwJUVEJTk4JTk1JUVBJUIwJTgwJUVDJTg2JThEJUVBJUI4JUIwJTIwJUVEJTkyJTg4JUVDJUE3JTg4JUVBJUI0JTgwJUVCJUE2JUFDJTIwJUVCJUFGJUI4JUVDJTlEJUI0JUVEJTk2JTg5'); return false;">선형가속기 품질관리 미이행</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/technical_criteria/technical_criteria_quality_management.html" class="no-external">
+
+
+<ul>
+<li>동 병원의 선형가속기 품질관리절차서에 따라 주어진 시기에 선형가속기에 대한 방사선량 교정 및 평가 등의 품질관리를 수행하여야 하나 2015.1.X.부터 2015.10.X. 사업 휴지시점까지 이행한 실적이 없어 이를 지적함.</li>
+</ul>
+
+
+
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/technical_criteria/technical_criteria_quality_management.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="31" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVBJUI4JUIwJUVCJUExJTlEJUVBJUIzJUJDJTIwJUVCJUI5JTg0JUVDJUI5JTk4" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744697" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="115">
+<div class="thumbnail"><a href="./posts/inspection/recording_keeping/recording_keeping.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/recording_keeping/recording_keeping.html" class="no-external">기록과 비치</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVBJUI4JUIwJUVCJUExJTlEJUVBJUIzJUJDJTIwJUVCJUI5JTg0JUVDJUI5JTk4'); return false;">기록과 비치</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/recording_keeping/recording_keeping.html" class="no-external">
+기록과 비치과 관련된 법령ㆍ규칙ㆍ고시는 아래와 같습니다.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/recording_keeping/recording_keeping.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="32" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVBJUI4JUIwJUVCJUExJTlEJUVBJUIzJUJDJTIwJUVCJUI5JTg0JUVDJUI5JTk4" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744697" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="152">
+<div class="thumbnail"><a href="./posts/inspection/recording_keeping/recording_keeping_noncompliance.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/recording_keeping/recording_keeping_noncompliance.html" class="no-external">기록비치 부적합</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVBJUI4JUIwJUVCJUExJTlEJUVBJUIzJUJDJTIwJUVCJUI5JTg0JUVDJUI5JTk4'); return false;">기록과 비치</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/recording_keeping/recording_keeping_noncompliance.html" class="no-external">
+방사성동위원소의 보관 및 사용한 때 마다 일시, 장소, 방법, 목적, 종사자 성명, 종류 및 수량을 기록하여야 하나, 동 기관은 다음의 사항을 누락함
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/recording_keeping/recording_keeping_noncompliance.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="33" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVEJTk0JUJDJUVEJThGJUFEJUVBJUI0JTgwJUVCJUE2JUFD" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744689" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="2" data-listing-word-count-sort="393">
+<div class="thumbnail"><a href="./posts/inspection/exposure_control/exposure_control.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/exposure_control/exposure_control.html" class="no-external">피폭관리</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVEJTk0JUJDJUVEJThGJUFEJUVBJUI0JTgwJUVCJUE2JUFD'); return false;">피폭관리</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/exposure_control/exposure_control.html" class="no-external">
+피폭관리와 관련된 법령규칙고시는 아래와 같습니다.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/exposure_control/exposure_control.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="34" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVEJTk0JUJDJUVEJThGJUFEJUVBJUI0JTgwJUVCJUE2JUFD" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744693" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="102">
+<div class="thumbnail"><a href="./posts/inspection/exposure_control/exposure_control_improper.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/exposure_control/exposure_control_improper.html" class="no-external">피폭관리 부적합</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVEJTk0JUJDJUVEJThGJUFEJUVBJUI0JTgwJUVCJUE2JUFD'); return false;">피폭관리</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/exposure_control/exposure_control_improper.html" class="no-external">
+동 기관은 2010년 4/4분기에 개인선량계를 분실한 판독특이자(OOO 방사성동위원소특수면허 소지자)에 대하여 원자력안전법 관련법령에 따라 판독특이자가 발생한 날로부터 20일 이내에 한국원자력안전기술원장에게 보고하여야 하나, 보고 기간을 초과하여 지연 보고 하였음.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/exposure_control/exposure_control_improper.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="35" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVCJUIzJTgwJUVBJUIyJUJEJUVEJTk3JTg4JUVBJUIwJTgw" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744693" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="185">
+<div class="thumbnail"><a href="./posts/inspection/license_amendment/license_amendment_limit_over.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/license_amendment/license_amendment_limit_over.html" class="no-external">변경허가 미신청</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVCJUIzJTgwJUVBJUIyJUJEJUVEJTk3JTg4JUVBJUIwJTgw'); return false;">변경허가</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/license_amendment/license_amendment_limit_over.html" class="no-external">
+동 기관은 개봉선원 I-131 및 Tl-201의 연간 허가량을 아래와 같이 초과 사용 하였음.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/license_amendment/license_amendment_limit_over.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="36" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVCJUIzJTgwJUVBJUIyJUJEJUVEJTk3JTg4JUVBJUIwJTgw" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744693" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="2" data-listing-word-count-sort="218">
+<div class="thumbnail"><a href="./posts/inspection/license_amendment/license_amendment.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/license_amendment/license_amendment.html" class="no-external">변경허가</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVCJUIzJTgwJUVBJUIyJUJEJUVEJTk3JTg4JUVBJUIwJTgw'); return false;">변경허가</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/license_amendment/license_amendment.html" class="no-external">
+변경허가와 관련된 법령규칙고시는 아래와 같습니다.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/license_amendment/license_amendment.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="37" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVDJTlFJUE1JUVCJUI5JTg0JUUzJTg2JThEJUVDJTlEJUI4JUVCJUEwJUE1" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744689" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="82">
+<div class="thumbnail"><a href="./posts/inspection/equipment_human_resources/equipment_human_resources_improper.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/equipment_human_resources/equipment_human_resources_improper.html" class="no-external">장비ㆍ인력 기준위반</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTlFJUE1JUVCJUI5JTg0JUUzJTg2JThEJUVDJTlEJUI4JUVCJUEwJUE1'); return false;">장비ㆍ인력</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/equipment_human_resources/equipment_human_resources_improper.html" class="no-external">
+동 병원은 다음 기간 동안 방사성동위원소취급특수면허 소지자 의 근무가 확인되지 아니함
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/equipment_human_resources/equipment_human_resources_improper.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="38" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVDJTlFJUE1JUVCJUI5JTg0JUUzJTg2JThEJUVDJTlEJUI4JUVCJUEwJUE1" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744689" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="2" data-listing-word-count-sort="226">
+<div class="thumbnail"><a href="./posts/inspection/equipment_human_resources/equipment_human_resources.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/equipment_human_resources/equipment_human_resources.html" class="no-external">장비ㆍ인력</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTlFJUE1JUVCJUI5JTg0JUUzJTg2JThEJUVDJTlEJUI4JUVCJUEwJUE1'); return false;">장비ㆍ인력</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/equipment_human_resources/equipment_human_resources.html" class="no-external">
+장비ㆍ인력과 관련된 법령규칙고시는 아래와 같습니다.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/equipment_human_resources/equipment_human_resources.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="39" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVCJUIzJUI0JUVBJUIzJUEw" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744697" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="62">
+<div class="thumbnail"><a href="./posts/inspection/reporting/reporting_omission.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/reporting/reporting_omission.html" class="no-external">보고, 검사 등 누락보고</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVCJUIzJUI0JUVBJUIzJUEw'); return false;">보고</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/reporting/reporting_omission.html" class="no-external">
+
+<li>원자력안전법 제98조(보고, 검사 등) 1항에 따라 개봉선원의 사용 등에 관한 관리현황을 보고하여야 하나,
+<ul>
+<li><pre><code>  액체 폐기물에 대한 폐기현황을 누락한 채 보고하였음. </code></pre></li>
+<li><pre><code>  3단 저류조(6.3톤 크기)에 수집하여 약 월 1회 배출함에도 분기보고 시 이에 대한 보고를 하지 않음(약 2년여 기간)</code></pre></li>
+</ul></li>
+
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/reporting/reporting_omission.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="40" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVCJUIzJUI0JUVBJUIzJUEw" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744697" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="2" data-listing-word-count-sort="236">
+<div class="thumbnail"><a href="./posts/inspection/reporting/reporting.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/reporting/reporting.html" class="no-external">보고</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVCJUIzJUI0JUVBJUIzJUEw'); return false;">보고</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/reporting/reporting.html" class="no-external">
+보고와 관련된 법령규칙고시는 아래와 같습니다.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/reporting/reporting.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="41" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVDJTlFJTkwJUVDJUIyJUI0JUVDJUIyJTk4JUVCJUI2JTg0" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744697" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
+<div class="thumbnail"><a href="./posts/inspection/self_disposal/self_disposal_amount_mismatch.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/self_disposal/self_disposal_amount_mismatch.html" class="no-external">자체처분 부적합</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTlFJTkwJUVDJUIyJUI0JUVDJUIyJTk4JUVCJUI2JTg0'); return false;">자체처분</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/self_disposal/self_disposal_amount_mismatch.html" class="no-external">
+당초 제출된 자체처분계획서에는 총 OO L를 자체 처분할 것으로 신고하였으나 동병원의 폐기물관리 기록상 자체처분한 양은 OOL 였음.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/self_disposal/self_disposal_amount_mismatch.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="42" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVDJTlFJTkwJUVDJUIyJUI0JUVDJUIyJTk4JUVCJUI2JTg0" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744697" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="4" data-listing-word-count-sort="706">
+<div class="thumbnail"><a href="./posts/inspection/self_disposal/self_disposal.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/self_disposal/self_disposal.html" class="no-external">자체처분</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTlFJTkwJUVDJUIyJUI0JUVDJUIyJTk4JUVCJUI2JTg0'); return false;">자체처분</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/self_disposal/self_disposal.html" class="no-external">
+자체처분과 관련된 법령규칙고시는 아래와 같음.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/self_disposal/self_disposal.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="43" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVDJTg0JUEwJUVCJTlGJTg5JUUzJTg2JThEJUVDJTk4JUE0JUVDJTk3JUJDJUVDJUI4JUExJUVDJUEwJTk1JTJDJUVEJTkxJTlDJUVCJUE5JUI0JUVDJTk4JUE0JUVDJTk3JUJDJUVCJThGJTg0" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744689" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="70">
+<div class="thumbnail"><a href="./posts/inspection/dose_contamination_measurement/surface_contamination.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/dose_contamination_measurement/surface_contamination.html" class="no-external">표면오염도 측정 부적합</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTg0JUEwJUVCJTlGJTg5JUUzJTg2JThEJUVDJTk4JUE0JUVDJTk3JUJDJUVDJUI4JUExJUVDJUEwJTk1'); return false;">선량ㆍ오염측정</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVEJTkxJTlDJUVCJUE5JUI0JUVDJTk4JUE0JUVDJTk3JUJDJUVCJThGJTg0'); return false;">표면오염도</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/dose_contamination_measurement/surface_contamination.html" class="no-external">
+개봉선원을 사용하는 경우 방사성물질로 오염된 물체의 표면오염도를 작업을 할 때마다 측정하고 기록하여야 하나, 동 병원은 개봉선원을 매일 사용하는 방사선사용구역의 표면오염도를 주1회만 측정하여 기록하고 있음
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/dose_contamination_measurement/surface_contamination.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="44" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVDJTg0JUEwJUVCJTlGJTg5JUUzJTg2JThEJUVDJTk4JUE0JUVDJTk3JUJDJUVDJUI4JUExJUVDJUEwJTk1" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744689" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="2" data-listing-word-count-sort="357">
+<div class="thumbnail"><a href="./posts/inspection/dose_contamination_measurement/dose_contamination_measurement.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/dose_contamination_measurement/dose_contamination_measurement.html" class="no-external">선량ㆍ오염측정</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTg0JUEwJUVCJTlGJTg5JUUzJTg2JThEJUVDJTk4JUE0JUVDJTk3JUJDJUVDJUI4JUExJUVDJUEwJTk1'); return false;">선량ㆍ오염측정</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/dose_contamination_measurement/dose_contamination_measurement.html" class="no-external">
+선량ㆍ오염측정과 관련된 법령ㆍ규칙ㆍ고시는 아래와 같습니다.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/dose_contamination_measurement/dose_contamination_measurement.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="45" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVCJUIwJUE5JUVDJTgyJUFDJUVDJTg0JUEwJUVDJTk1JTg4JUVDJUEwJTg0JUVBJUI0JTgwJUVCJUE2JUFDJUVBJUI3JTlDJUVDJUEwJTk1" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744697" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="120">
+<div class="thumbnail"><a href="./posts/inspection/safety_management_regulation/safety_management_regulation.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/safety_management_regulation/safety_management_regulation.html" class="no-external">방사선안전관리규정</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVCJUIwJUE5JUVDJTgyJUFDJUVDJTg0JUEwJUVDJTk1JTg4JUVDJUEwJTg0JUVBJUI0JTgwJUVCJUE2JUFDJUVBJUI3JTlDJUVDJUEwJTk1'); return false;">방사선안전관리규정</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/safety_management_regulation/safety_management_regulation.html" class="no-external">
+방사선안전관리규정과 관련된 법령ㆍ규칙ㆍ고시는 아래와 같습니다.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/safety_management_regulation/safety_management_regulation.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="46" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFEJTJDJUVDJTk1JTg4JUVDJUEwJTg0JUVBJUI0JTgwJUVCJUE2JUFDJUVBJUI3JTlDJUVDJUEwJTk1" data-listing-date-sort="1731769200000" data-listing-file-modified-sort="1755389744697" data-listing-date-modified-sort="1731769200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="142">
+<div class="thumbnail"><a href="./posts/inspection/safety_management_regulation/safety_management_regulation_noncompliance.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/safety_management_regulation/safety_management_regulation_noncompliance.html" class="no-external">안전관리규정 미준수</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적사항</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTk1JTg4JUVDJUEwJTg0JUVBJUI0JTgwJUVCJUE2JUFDJUVBJUI3JTlDJUVDJUEwJTk1'); return false;">안전관리규정</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/safety_management_regulation/safety_management_regulation_noncompliance.html" class="no-external">
+
+
+<ul>
+<li>동 기관은 혈액조사 목적으로 사용했던 방사성동위원소(Cs-137 ⭘⭘Bq)를 새로운 선원으로 교체 이후 해당 방사선원은 사용이 종료되었음.
+<ul>
+<li><pre><code>  사용이 종료된 방사성동위원소는 보관폐기일로부터 3개월 이내에 폐기하여야 하나, 해당 방사선원은 동 기관 지하1층 방사선종양학과 예비 LINAC실에 보관중에…</code></pre></li></ul></li></ul>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/safety_management_regulation/safety_management_regulation_noncompliance.html" class="no-external">
+<div class="listing-date">
+2024.11.17
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="47" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJTg4JTk4JUVBJUIyJTgwJUVDJUE0JTgwJUVCJUI5JTg0" data-listing-date-sort="1731682800000" data-listing-file-modified-sort="1755389744693" data-listing-date-modified-sort="1731682800000" data-listing-reading-time-sort="1" data-listing-word-count-sort="11">
+<div class="thumbnail"><a href="./posts/inspection/guidelines/guidelines_old.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/guidelines/guidelines_old.html" class="no-external">수검가이드라인</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTg4JTk4JUVBJUIyJTgwJUVDJUE0JTgwJUVCJUI5JTg0'); return false;">수검준비</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/guidelines/guidelines_old.html" class="no-external">
+한국원자력안전기술원에서 2022년 공개한 방사선분야 정기검사수검가이드입니다.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/guidelines/guidelines_old.html" class="no-external">
+<div class="listing-date">
+2024.11.16
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="48" data-categories="aW50cm9kdWN0aW9u" data-listing-date-sort="1731682800000" data-listing-file-modified-sort="1755389744693" data-listing-date-modified-sort="1731682800000" data-listing-reading-time-sort="1" data-listing-word-count-sort="67">
+<div class="thumbnail"><a href="./posts/inspection/introduction.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/introduction.html" class="no-external">정기검사</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('aW50cm9kdWN0aW9u'); return false;">introduction</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/introduction.html" class="no-external">
+정기검사와 관련된 사항들을 정리하였습니다.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/introduction.html" class="no-external">
+<div class="listing-date">
+2024.11.16
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="49" data-categories="JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFDJTJDJUVDJUE3JTgwJUVDJUEwJTgxJUVBJUI2JThDJUVBJUIzJUEwJUVDJTgyJUFDJUVEJTk1JUFE" data-listing-date-sort="1731682800000" data-listing-file-modified-sort="1755389744693" data-listing-date-modified-sort="1731682800000" data-listing-reading-time-sort="1" data-listing-word-count-sort="28">
+<div class="thumbnail"><a href="./posts/inspection/inspection.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/inspection/inspection.html" class="no-external">지적권고사항</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUEwJTk1JUVBJUI4JUIwJUVBJUIyJTgwJUVDJTgyJUFD'); return false;">정기검사</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJUE3JTgwJUVDJUEwJTgxJUVBJUI2JThDJUVBJUIzJUEwJUVDJTgyJUFDJUVEJTk1JUFE'); return false;">지적권고사항</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/inspection/inspection.html" class="no-external">
+한국원자력안전기술원에서 2017년 개최한 의료분야 안전관리 워크샵자료집에서 발췌하였습니다. <span class="citation" data-cites="igibog2017">[1]</span>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/inspection/inspection.html" class="no-external">
+<div class="listing-date">
+2024.11.16
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="50" data-categories="JUVBJUI3JTlDJUVDJUEwJTlDJUVBJUIwJTlDJUVDJTg0JUEwJTJDJUVCJUIzJUI0JUVBJUIzJUEwJUVDJUE0JTkxJUVCJUIzJUI1" data-listing-date-sort="1651590000000" data-listing-file-modified-sort="1755389744715" data-listing-date-modified-sort="1651590000000" data-listing-reading-time-sort="1" data-listing-word-count-sort="68">
+<div class="thumbnail"><a href="./posts/suggestion/reporting/reporting_duplicated.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/suggestion/reporting/reporting_duplicated.html" class="no-external">보고중복</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVBJUI3JTlDJUVDJUEwJTlDJUVBJUIwJTlDJUVDJTg0JUEw'); return false;">규제개선</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVCJUIzJUI0JUVBJUIzJUEwJUVDJUE0JTkxJUVCJUIzJUI1'); return false;">보고중복</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/suggestion/reporting/reporting_duplicated.html" class="no-external">
+제안내용: 방사선 검사 및 보고분야 중복규제 개선
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/suggestion/reporting/reporting_duplicated.html" class="no-external">
+<div class="listing-date">
+2022.5.4
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="51" data-categories="JUVBJUI3JTlDJUVDJUEwJTlDJUVBJUIwJTlDJUVDJTg0JUEwJTJDUkklRUMlOUElQjQlRUMlODYlQTE=" data-listing-date-sort="1651590000000" data-listing-file-modified-sort="1755389744715" data-listing-date-modified-sort="1651590000000" data-listing-reading-time-sort="1" data-listing-word-count-sort="138">
+<div class="thumbnail"><a href="./posts/suggestion/transport/transport_inside.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/suggestion/transport/transport_inside.html" class="no-external">RI 원내이동</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVBJUI3JTlDJUVDJUEwJTlDJUVBJUIwJTlDJUVDJTg0JUEw'); return false;">규제개선</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UkklRUMlOUElQjQlRUMlODYlQTE='); return false;">RI운송</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/suggestion/transport/transport_inside.html" class="no-external">
+제안내용: 방사성의약품생산시설이 기관 내에 있고 핵의학과로 원내 이동 시 1인이 운반할 수 있도록 보완
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/suggestion/transport/transport_inside.html" class="no-external">
+<div class="listing-date">
+2022.5.4
+</div>
+<div class="listing-author">
+대한핵의학회 방사선안전위원회
+</div>
+</a>
+</div>
+</div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
+<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div></main> <!-- /main -->
-<script src="https://utteranc.es/client.js" repo="BenKorea/utterances-comments" issue-term="pathname" theme="preferred-color-scheme" crossorigin="anonymous" async="">
-</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -341,11 +2135,6 @@ BenKorea
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
-            // target, if specified
-            link.setAttribute("target", "_blank");
-            if (link.getAttribute("rel") === null) {
-              link.setAttribute("rel", "noopener");
-            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -659,7 +2448,10 @@ BenKorea
     }
   });
   </script>
+<script src="https://utteranc.es/client.js" repo="RadiationSafetyNM/website" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+</script>
 </div> <!-- /content -->
+<script src="./scripts/tooltip.js"></script>
 
 
 

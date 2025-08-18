@@ -1,32 +1,157 @@
 project:
   type: website
   output-dir: docs
-  render:
-    - "*.qmd"
-    - "!*.md"
 
 website:
-  title: "Template"
+  title: "방사선안전관리"
+  
   navbar:
-     left:
-      - text: "Blog"
-        href: index.qmd
-      - text: "About"
-        href: posts/about.qmd
+    logo: KSNM_logo.png
+    left:
+      - text: "사이트사용법"
+        href: posts/manual.qmd
+      - text: "안전관리실무"
+        href: posts/practice/duty/duty.qmd  
+      - text: "영상품질·선량최적화"
+        href: posts/optimization/optimization.qmd          
+      - text: "규제개선제안"
+        href: posts/suggestion/index.qmd
+      - text: "블로그"
+        href: index.qmd   
+      - text: "ICRP출판물"
+        href: posts/ICRP/icrp.qmd           
+      - text: "관련 사이트"
+        href: posts/link.qmd           
+    right:
+      - text: version 0.3.0 (2025-05-28)
+        href: "#"    
+      - icon: github
+        href: https://github.com/
+    search: true
+    
+  sidebar:
+    - title: "안전관리실무"
+      contents:
+        - section: "안전관리자업무"
+          href: posts/practice/duty/duty.qmd
+          contents:  
+            - text: "안전관리규정 준수여부 점검"
+              href: posts/practice/duty/smr_revising.qmd
+            - text: "기술기준 준수여부 점검"
+              href: posts/practice/duty/technical_criteria.qmd
+            - text: "방사선장해방지조치"
+              href: posts/practice/duty/protection.qmd
+            - text: "안전관리에 대한 조치 권고"
+            - text: "안전관리자 업무요약"
+              href: posts/practice/duty/summary.qmd
+        - section: "정기검사 수검준비"
+          href: posts/inspection/guidelines/guidelines.qmd
+          contents:
+          - posts/inspection/guidelines/guidelines.qmd   
+          - section: "지적권고사항"
+            href: posts/inspection/inspection.qmd
+            contents:
+            - section: "교육훈련"
+              href: posts/inspection/education_training/education_training.qmd
+              contents:
+              - posts/inspection/education_training/radiation_workers_inductory.qmd    
+              - posts/inspection/education_training/radiation_workers_regular.qmd               
+              - posts/inspection/education_training/licensees_continuing.qmd              
+            - section: "건강진단"
+              href: posts/inspection/health_examination/health_examination.qmd          
+              contents:
+              - posts/inspection/health_examination/health_examination_new_workers.qmd
+              - posts/inspection/health_examination/health_examination_workers.qmd            
+              - posts/inspection/health_examination/health_examination_retired.qmd            
+            - section: "기록비치"
+              href: posts/inspection/recording_keeping/recording_keeping.qmd          
+              contents:
+              - posts/inspection/recording_keeping/recording_keeping_noncompliance.qmd             
+            - section: "안전관리규정"
+              href: posts/inspection/safety_management_regulation/safety_management_regulation.qmd          
+              contents:
+              - posts/inspection/safety_management_regulation/safety_management_regulation_noncompliance.qmd             
+            - section: "선량ㆍ오염측정"
+              href: posts/inspection/dose_contamination_measurement/dose_contamination_measurement.qmd                    
+              contents:
+              - posts/inspection/dose_contamination_measurement/surface_contamination.qmd                 
+            - section: "기술기준"
+              href: posts/inspection/technical_criteria/technical_criteria.qmd
+              contents:
+              - posts/inspection/technical_criteria/technical_criteria_contamination_measurement.qmd  
+              - posts/inspection/technical_criteria/technical_criteria_quality_management.qmd
+              - posts/inspection/technical_criteria/technical_criteria_warning.qmd   
+            - section: "변경허가"
+              href: posts/inspection/license_amendment/license_amendment.qmd
+              contents:
+              - posts/inspection/license_amendment/license_amendment_limit_over.qmd   
+            - section: "자체처분"
+              href: posts/inspection/self_disposal/self_disposal.qmd          
+              contents:
+              - posts/inspection/self_disposal/self_disposal_amount_mismatch.qmd  
+            - section: "시설검사"
+              href: posts/inspection/facility_inspection/facility_inspection.qmd
+              contents:
+              - posts/inspection/facility_inspection/facility_inspection_conducting.qmd
+            - section: "변경신고"
+              href: posts/inspection/alteration_reporting/alteration_reporting.qmd
+              contents:
+              - posts/inspection/alteration_reporting/alteration_reporting_conducting.qmd
+            - section: "장비ㆍ인력"
+              href: posts/inspection/equipment_human_resources/equipment_human_resources.qmd          
+              contents:
+              - posts/inspection/equipment_human_resources/equipment_human_resources_improper.qmd
+            - section: "피폭관리"
+              href: posts/inspection/exposure_control/exposure_control.qmd
+              contents:
+              - posts/inspection/exposure_control/exposure_control_improper.qmd 
+            - section: "보고"
+              href: posts/inspection/reporting/reporting.qmd
+              contents:
+              - posts/inspection/reporting/reporting_omission.qmd              
 
-execute: 
-  freeze: auto
+    - title: "영상품질·선량최적화"
+      contents:
+        - posts/optimization/optimization.qmd
+
+    - title: "규제개선제안"
+      contents:
+        - posts/suggestion/index.qmd
+        - section: "운송"
+          href: posts/suggestion/transport/transport.qmd
+          contents:
+            - posts/suggestion/transport/transport_inside.qmd
+        - section: "보고"
+          href: posts/suggestion/reporting/reporting.qmd
+          contents:
+            - posts/suggestion/reporting/reporting_duplicated.qmd   
+        - section: "최적화"
+          href: posts/suggestion/optimization/optimization.qmd
+          contents:
+            - posts/suggestion/optimization/approriate.qmd
+
+    - title: "ICRP출판물"
+      contents:
+        - posts/ICRP/icrp.qmd  
+    - title: "관련 사이트"
+      contents:
+        - posts/link.qmd    
 
 format:
   html:
-    theme:
-      - cosmo
-    css: styles/styles.css
+    theme: cosmo
+    relative-resources: true
+    css: styles/tooltip.css
+    # bibliography: references.bib
     csl: references/nuclear-medicine-and-molecular-imaging.csl
-    code-copy: true
     toc: true
-    mathjax: "default"
-    link-external-newwindow: true
-    number-sections: true
-    include-after-body: utterances.html
-
+    toc-depth: 6
+    date-format: "YYYY.M.D"
+    date-modified-format: "YYYY.M.D"    
+    include-after-body:
+      - text: |
+          <script src="/scripts/tooltip.js"></script>
+    
+    comments:
+      utterances:
+        repo: RadiationSafetyNM/website

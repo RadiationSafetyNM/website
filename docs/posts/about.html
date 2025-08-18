@@ -7,10 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="BenKorea">
-<meta name="dcterms.date" content="2025-08-16">
 <meta name="description" content="Template에 대한 설명">
 
-<title>R Python Quarto website template – Template</title>
+<title>R Python Quarto website template – 방사선안전관리</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +76,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b4af785bccbe96877ebdb8ae6fbd0d5b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-982b584ddbe2e4eb8abcc9b342571f64.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -107,18 +106,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="../styles/styles.css">
+<link rel="stylesheet" href="../styles/tooltip.css">
 </head>
 
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../KSNM_logo.png" alt="" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Template</span>
+    <span class="navbar-title">방사선안전관리</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -128,12 +130,43 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Blog</span></a>
+    <a class="nav-link" href="../posts/manual.html"> 
+<span class="menu-text">사이트사용법</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../posts/about.html" aria-current="page"> 
-<span class="menu-text">About</span></a>
+    <a class="nav-link" href="../posts/practice/duty/duty.html"> 
+<span class="menu-text">안전관리실무</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../posts/optimization/optimization.html"> 
+<span class="menu-text">영상품질·선량최적화</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../posts/suggestion/index.html"> 
+<span class="menu-text">규제개선제안</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">블로그</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../posts/ICRP/icrp.html"> 
+<span class="menu-text">ICRP출판물</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../posts/link.html"> 
+<span class="menu-text">관련 사이트</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../#"> 
+<span class="menu-text">version 0.3.0 (2025-05-28)</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -143,7 +176,46 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">R Python Quarto website template</h1>
+                  <div>
+        <div class="description">
+          Template에 대한 설명
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>BenKorea </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">2025.8.16</p>
+      </div>
+    </div>
+    
+      <div>
+      <div class="quarto-title-meta-heading">Modified</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">2025.8.17</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -151,62 +223,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#웹사이트-사용법" id="toc-웹사이트-사용법" class="nav-link active" data-scroll-target="#웹사이트-사용법"><span class="header-section-number">1</span> 웹사이트 사용법</a>
-  <ul class="collapse">
-  <li><a href="#날짜의-의미" id="toc-날짜의-의미" class="nav-link" data-scroll-target="#날짜의-의미"><span class="header-section-number">1.1</span> 날짜의 의미</a></li>
+  <li><a href="#웹사이트-사용법" id="toc-웹사이트-사용법" class="nav-link active" data-scroll-target="#웹사이트-사용법">웹사이트 사용법</a>
+  <ul>
+  <li><a href="#날짜의-의미" id="toc-날짜의-의미" class="nav-link" data-scroll-target="#날짜의-의미">날짜의 의미</a></li>
   </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">R Python Quarto website template</h1>
-</div>
-
-<div>
-  <div class="description">
-    Template에 대한 설명
-  </div>
-</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
-<div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>BenKorea </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">August 16, 2025</p>
-    </div>
-  </div>
-  
-    <div>
-    <div class="quarto-title-meta-heading">Modified</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date-modified">August 16, 2025</p>
-    </div>
-  </div>
-    
-  </div>
-  
 
 
-</header>
 
-
-<section id="웹사이트-사용법" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="웹사이트-사용법"><span class="header-section-number">1</span> 웹사이트 사용법</h2>
-<section id="날짜의-의미" class="level3" data-number="1.1">
-<h3 data-number="1.1" class="anchored" data-anchor-id="날짜의-의미"><span class="header-section-number">1.1</span> 날짜의 의미</h3>
+<section id="웹사이트-사용법" class="level2">
+<h2 class="anchored" data-anchor-id="웹사이트-사용법">웹사이트 사용법</h2>
+<section id="날짜의-의미" class="level3">
+<h3 class="anchored" data-anchor-id="날짜의-의미">날짜의 의미</h3>
 <ul>
 <li>각 웹페이지는 두 가지 날짜가 있으며 이 웹사이트에서는 구별되어 사용되고 있습니다.
 <ul>
@@ -235,8 +269,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 
 </main> <!-- /main -->
-<script src="https://utteranc.es/client.js" repo="BenKorea/utterances-comments" issue-term="pathname" theme="preferred-color-scheme" crossorigin="anonymous" async="">
-</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -323,11 +355,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
-            // target, if specified
-            link.setAttribute("target", "_blank");
-            if (link.getAttribute("rel") === null) {
-              link.setAttribute("rel", "noopener");
-            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -641,7 +668,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
   });
   </script>
+<script src="https://utteranc.es/client.js" repo="RadiationSafetyNM/website" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+</script>
 </div> <!-- /content -->
+<script src="../scripts/tooltip.js"></script>
 
 
 
